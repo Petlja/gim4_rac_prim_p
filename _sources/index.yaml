@@ -1,0 +1,137 @@
+courseId: kurs_gim4_savremeno_racunarstvo
+lang: sr-Cyrl
+title: Области примене савременог рачунарства за четврти разред гимназије природни смер
+description:
+  longDescription: |
+    Овај курс је намењен ученицима четвртог разреда гимназија природно-математичког смера за предмет Рачунарство и информатика. Курс прати одговарајући програм наставе и учења.
+
+    <p>
+    <a rel="license" href="https://creativecommons.org/licenses/by/4.0/deed.sr_LATN">
+    <img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by/4.0/88x31.png" /></a>
+    <br />Овај курс Фондација Петља објавила je под лиценцом <a rel="license" href="https://creativecommons.org/licenses/by/4.0/deed.sr_LATN">Creative Commons Autorstvo 4.0 Međunarodna Licenca (CC BY 4.0)</a>.
+    </p> 
+
+  shortDescription: Информатика 4 - примене савременог рачунарства
+  willLearn:
+    - ...
+  requirements:
+    - Интернет прегледач (браузер)
+  toc:
+    - Интернет ствари и паметни градови
+    - Вештачка интелигенција
+    - Мaшинско учење
+    - Обрада великих количина података
+    - Роботика
+    - Криптографија
+    - Квантни рачунари
+
+
+lessons:
+  - title: Увод
+    guid: 85660235-1883-4b55-abdd-10e508301e33
+    folder: 0_uvod
+    activities:
+      - type: reading
+        title: Увод
+        file: uvod.rst 
+        guid: e2ff28b9-c7c2-4636-aea9-90612fa746c3
+  - title: Интернет ствари и паметни градови
+    guid: 2f56c73d-fd5f-43ec-a927-3d1e05eb0cce
+    folder: 1_IOT
+    activities:
+      - type: reading
+        title: Интернет ствари
+        file: IOT.rst 
+        guid: 80e41858-5d7c-46d3-b6fe-85f6d3824a1e
+      - type: reading
+        title: Паметни градови
+        file: pametni_gradovi.rst 
+        guid: 15512081-f8f9-4010-9751-fe34020d7f9f
+      - type: quiz
+        title: Интернет ствари и паметни градови - квиз
+        file: IOT_quiz.rst
+        guid: 5f2e50fb-b0d5-466f-aa2f-543dcea5c664
+  - title: Вештачка интелигенција
+    guid: 41ca12c3-b9a9-4445-b395-ae3602c89f7f
+    folder: 2_vestacka_inteligencija
+    activities:
+      - type: reading
+        title: Вештачка интелигенција
+        file: vestacka_inteligencija.rst 
+        guid: 6dcbc9d6-e278-48d5-81d0-00919d7241d9
+      - type: quiz
+        title: Вештачка интелигенција - квиз
+        file: vestacka_inteligencija_quiz.rst
+        guid: c8300644-c518-4ecb-885a-75cee8db33fe
+  - title: Мaшинско учење
+    guid: e05891e3-5b14-421f-a74a-33aca256d882
+    folder: 3_masinsko_ucenje
+    activities:
+      - type: reading
+        title: Мaшинско учење
+        file: masinsko_ucenje.rst 
+        guid: 343f803d-a787-45bb-b762-a51a50a757cd
+      - type: quiz
+        title: Мaшинско учење - квиз
+        file: masinsko_ucenje_quiz.rst
+        guid: 1a97eebf-f4b8-470e-bd64-2cc5cacdf6ee
+  - title: Обрада великих количина података
+    guid: 0face7cf-c49c-4b9e-bfc4-65e687b66488
+    folder: 4_big_data
+    activities:
+      - type: reading
+        title: Обрада великих количина података
+        file: big_data.rst 
+        guid: e035693a-04e2-4301-a2e5-cb253c0a41f8
+      - type: reading
+        title: Анализа података и наука о подацима
+        file: data_science.rst
+        guid: b96c92aa-6642-4d97-8b19-1777fca8a25f
+      - type: quiz
+        title: Обрада великих количина података - квиз
+        file: big_data_quiz.rst
+        guid: 83fb2291-9361-4ee4-b207-8f778bca28dd
+  - title: Роботика
+    guid: 53bd0382-7adb-4f6f-8e16-20c04bbfda29
+    folder: 5_robotika
+    activities:
+      - type: reading
+        title: Роботика
+        file: robotika.rst 
+        guid: b24be0b9-abdf-4cef-95de-1587d1935488
+      - type: quiz
+        title: Роботика - квиз
+        file: robotika_quiz.rst
+        guid: 575a2944-aa4d-4a04-bb4d-431e3a1f2950
+  - title: Криптографија
+    guid: 89cbd425-75ad-4860-b85a-59331a13f68c
+    folder: 6_kriptografija
+    activities:
+      - type: reading
+        title: Криптографија
+        file: kriptografija.rst 
+        guid: a8efabd2-7893-4e4f-aa0b-fc2ddb79566e
+      - type: reading
+        title: Криптовање помоћу јавног кључа
+        file: javni_kljuc.rst
+        guid: 743a4abb-419d-47a5-9bbc-505aaf080f88
+      - type: reading
+        title: Проблем веродостојности и аутентичности поруке
+        file: autenticnost.rst
+        guid: a2ef9069-945a-4c38-9e30-c06f1a287712
+      - type: quiz
+        title: Криптографија - квиз
+        file: kriptografija_quiz.rst
+        guid: 6963a0ea-5ba4-473e-92e8-7cf35ba82e5a
+  - title: Квантни рачунари
+    guid: 90947185-e1d1-493a-88af-f40a10b6b22e
+    folder: 7_kvantni_racunari
+    activities:
+      - type: reading
+        title: Квантни рачунари
+        file: kvantni_racunari.rst 
+        guid: bb0dfee7-69c4-4de4-956a-4b38e43f3d21
+      - type: quiz
+        title: Квантни рачунари - квиз
+        file: kvantni_racunari_quiz.rst
+        guid: d5e6660e-8a73-4250-8ba3-0b708cf0a908
