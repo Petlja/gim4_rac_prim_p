@@ -109,16 +109,16 @@ lessons:
     activities:
       - type: reading
         title: Криптографија
-        file: kriptografija.rst 
+        file: a_kriptografija.rst 
         guid: a8efabd2-7893-4e4f-aa0b-fc2ddb79566e
       - type: reading
-        title: Криптовање помоћу јавног кључа
-        file: javni_kljuc.rst
+        title: Алгоритам RSA
+        file: b_rsa.rst
         guid: 743a4abb-419d-47a5-9bbc-505aaf080f88
       - type: reading
-        title: Проблем веродостојности и аутентичности поруке
-        file: autenticnost.rst
-        guid: a2ef9069-945a-4c38-9e30-c06f1a287712
+        title: Примене криптографије данас
+        file: c_danas.rst
+        guid: 4afc046d-4559-4c23-b232-a4f58b14035c
       - type: quiz
         title: Криптографија - квиз
         file: kriptografija_quiz.rst
