@@ -19,7 +19,9 @@
 `Анализа (отворених) података <https://petlja.org/biblioteka/r/kursevi/jupyterRadneSveske_srb>`_ и
 `Буди Data Driven - анализа и визуелизација података <https://petlja.org/kurs/6173>`_.
 
-.. topic:: Занимљивост
+.. infonote:: 
+
+    **Занимљивост:**
 
     Ефектан пример доношења одлука заснованих на подацима описан је у књизи `Moneyball: The Art of Winning an Unfair Game
     <https://en.wikipedia.org/wiki/Moneyball>`_ написаној по стварним догађајима (истоимени филм  - 
