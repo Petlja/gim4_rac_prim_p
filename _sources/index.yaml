@@ -11,7 +11,7 @@ description:
     <br />Овај курс Фондација Петља објавила je под лиценцом <a rel="license" href="https://creativecommons.org/licenses/by/4.0/deed.sr_LATN">Creative Commons Autorstvo 4.0 Međunarodna Licenca (CC BY 4.0)</a>.
     </p> 
 
-  shortDescription: Информатика 4 - примене савременог рачунарства
+  shortDescription: Примене савременог рачунарства
   willLearn:
     - ...
   requirements:
@@ -41,87 +41,139 @@ lessons:
     activities:
       - type: reading
         title: Интернет ствари
-        file: IOT.rst 
+        file: a_IOT.rst
         guid: 80e41858-5d7c-46d3-b6fe-85f6d3824a1e
       - type: reading
+        title: Примене интернета ствари
+        file: b_IOT_primene.rst
+        guid: dd2c1d10-5f8b-4749-b529-c88f521c16a8
+      - type: reading
         title: Паметни градови
-        file: pametni_gradovi.rst 
+        file: c_pametni_gradovi.rst
         guid: 15512081-f8f9-4010-9751-fe34020d7f9f
       - type: quiz
         title: Интернет ствари и паметни градови - квиз
-        file: IOT_quiz.rst
+        file: d_IOT_quiz.rst
         guid: 5f2e50fb-b0d5-466f-aa2f-543dcea5c664
   - title: Вештачка интелигенција
     guid: 41ca12c3-b9a9-4445-b395-ae3602c89f7f
     folder: 2_vestacka_inteligencija
     activities:
       - type: reading
-        title: Вештачка интелигенција
-        file: vestacka_inteligencija.rst 
-        guid: 6dcbc9d6-e278-48d5-81d0-00919d7241d9
+        title: Увод
+        file: a_ai_uvod.rst
+        guid: 002a278d-ec2d-485f-818e-d34bd347a976
+      - type: reading
+        title: Шта је вештачка интелигенција
+        file: b_ai_pojam.rst
+        guid: 5aaeca37-ab8b-4947-b4f8-33dcc9659f6d
+      - type: reading
+        title: Видови вештачке интелигенције
+        file: c_ai_vidovi.rst
+        guid: a857a5b2-7c48-4c70-b998-a3117f569312
+      - type: reading
+        title: Циљеви вештачке интелигенције
+        file: d_ai_ciljevi.rst
+        guid: 31d764a6-9e7f-4852-8296-6203fba3e5f0
+      - type: reading
+        title: Ризици и дилеме
+        file: e_ai_rizici_i_dileme.rst
+        guid: 117e5fe3-4699-4fd8-aab6-5c71ddf96c9d
       - type: quiz
         title: Вештачка интелигенција - квиз
-        file: vestacka_inteligencija_quiz.rst
+        file: f_vestacka_inteligencija_quiz.rst
         guid: c8300644-c518-4ecb-885a-75cee8db33fe
   - title: Мaшинско учење
     guid: e05891e3-5b14-421f-a74a-33aca256d882
     folder: 3_masinsko_ucenje
     activities:
       - type: reading
-        title: Мaшинско учење
-        file: masinsko_ucenje.rst 
-        guid: 343f803d-a787-45bb-b762-a51a50a757cd
+        title: Шта је машинско учење
+        file: a_ml_pojam.rst
+        guid: cd7d1422-e221-46cc-8a16-c9c61e9055d1
+      - type: reading
+        title: Видови машинског учења
+        file: b_ml_vidovi.rst
+        guid: 591fddfa-59c2-4f7b-8f53-707cfb427e95
       - type: quiz
         title: Мaшинско учење - квиз
-        file: masinsko_ucenje_quiz.rst
+        file: c_masinsko_ucenje_quiz.rst
         guid: 1a97eebf-f4b8-470e-bd64-2cc5cacdf6ee
   - title: Обрада великих количина података
     guid: 0face7cf-c49c-4b9e-bfc4-65e687b66488
     folder: 4_big_data
     activities:
       - type: reading
-        title: Обрада великих количина података
-        file: big_data.rst 
+        title: Доношење одлука на основу података
+        file: a_analiza_podataka.rst
+        guid: f8864b3b-43fb-4f69-9ff4-365227090e73
+      - type: reading
+        title: Велике количине података
+        file: b_big_data.rst
+        guid: 4291b479-95da-4f43-82ba-0779fbada036
+      - type: reading
+        title: Технологије иза великих количина података
+        file: c_tehnologija.rst
         guid: e035693a-04e2-4301-a2e5-cb253c0a41f8
       - type: reading
         title: Анализа података и наука о подацима
-        file: data_science.rst
+        file: d_nauka_o_podacima.rst
         guid: b96c92aa-6642-4d97-8b19-1777fca8a25f
+      - type: reading
+        title: Примене науке о подацима
+        file: e_primene.rst
+        guid: a116df9e-0610-49b6-91ca-79279e158559
       - type: quiz
         title: Обрада великих количина података - квиз
-        file: big_data_quiz.rst
+        file: f_big_data_quiz.rst
         guid: 83fb2291-9361-4ee4-b207-8f778bca28dd
   - title: Роботика
     guid: 53bd0382-7adb-4f6f-8e16-20c04bbfda29
     folder: 5_robotika
     activities:
       - type: reading
-        title: Роботика
-        file: robotika.rst 
+        title: Увод
+        file: a_robotika_uvod.rst
+        guid: d5ea359b-6e35-437a-a3fa-a33363c5cadc
+      - type: reading
+        title: Шта је робот
+        file: b_robot_osobine_delovi.rst
+        guid: 0de15b10-3231-43c2-b688-e8c559e86691
+      - type: reading
+        title: Неке примене робота
+        file: c_robotika_primene.rst
         guid: b24be0b9-abdf-4cef-95de-1587d1935488
       - type: quiz
         title: Роботика - квиз
-        file: robotika_quiz.rst
+        file: d_robotika_quiz.rst
         guid: 575a2944-aa4d-4a04-bb4d-431e3a1f2950
   - title: Криптографија
     guid: 89cbd425-75ad-4860-b85a-59331a13f68c
     folder: 6_kriptografija
     activities:
       - type: reading
-        title: Криптографија
-        file: a_kriptografija.rst 
+        title: Основни појмови
+        file: a_kriptografija_osnovno.rst 
         guid: a8efabd2-7893-4e4f-aa0b-fc2ddb79566e
       - type: reading
+        title: Криптовање помоћу јавног кључа
+        file: b_javni_kljuc.rst
+        guid: 6d868211-2a8e-4018-bf24-4fb254ca1186
+      - type: reading
         title: Алгоритам RSA
-        file: b_rsa.rst
+        file: c_rsa.rst
         guid: 743a4abb-419d-47a5-9bbc-505aaf080f88
       - type: reading
-        title: Примене криптографије данас
-        file: c_danas.rst
+        title: Задаци модерне криптографије
+        file: d_zadaci_danas.rst
+        guid: 3a65af78-8dce-4268-ad6c-c0a86bd7016e
+      - type: reading
+        title: Kриптографијa и хеширање
+        file: e_hesiranje.rst
         guid: 4afc046d-4559-4c23-b232-a4f58b14035c
       - type: quiz
         title: Криптографија - квиз
-        file: kriptografija_quiz.rst
+        file: f_kriptografija_quiz.rst
         guid: 6963a0ea-5ba4-473e-92e8-7cf35ba82e5a
   - title: Квантни рачунари
     guid: 90947185-e1d1-493a-88af-f40a10b6b22e
@@ -129,9 +181,29 @@ lessons:
     activities:
       - type: reading
         title: Квантни рачунари
-        file: kvantni_racunari.rst 
+        file: a_kvantni_rac_uvod.rst
         guid: bb0dfee7-69c4-4de4-956a-4b38e43f3d21
+      - type: reading
+        title: Основни принципи рада квантних рачунара
+        file: b_kvantni_rac_principi.rst
+        guid: 3538d5aa-4096-4966-b97d-05eb60a65b46
+      - type: reading
+        title: Могуће примене квантних рачунара
+        file: c_kvantni_rac_primene.rst
+        guid: 5ac733ad-3138-4266-a677-892320e1455c
+      - type: reading
+        title: Производња квантних рачунара
+        file: d_kvantni_rac_proizvodnja.rst
+        guid: 49ad81ab-5a75-4ad8-a189-24ab9461651c
       - type: quiz
         title: Квантни рачунари - квиз
-        file: kvantni_racunari_quiz.rst
+        file: e_kvantni_racunari_quiz.rst
         guid: d5e6660e-8a73-4250-8ba3-0b708cf0a908
+  - title: Закључак
+    guid: daf48f12-3726-41ad-a040-f72edb85fd11
+    folder: 8_zakljucak
+    activities:
+      - type: reading
+        title: Закључак
+        file: zakljucak.rst
+        guid: aabe3352-ae69-4d45-ba17-c768d17f1ecb
