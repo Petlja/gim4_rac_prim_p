@@ -4,7 +4,7 @@ Ovaj repozitorijum posvećen je kursu za Primene savremenog računarstva za 4. r
 
 Kurs je na Petljom portalu dotupan ovde: [https://petlja.org/kurs/7193/0](https://petlja.org/kurs/7193/)
 
-Kurs možete itegrisati u svoj LMS koristeći SCORM pakete koji se mogu preuzeti sa: https://github.com/Petlja/specit1_prog/releases
+Kurs možete itegrisati u svoj LMS koristeći SCORM pakete koji se mogu preuzeti sa: https://github.com/Petlja/gim4_rac_prim_p/releases
 
 ## Konverzija u *HTML*
 
