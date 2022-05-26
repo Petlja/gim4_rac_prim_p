@@ -85,7 +85,7 @@
     електрода. 
     
     
-    .. figure:: ../../_images/Роботизовані_датчики.jpg
+    .. figure:: ../../_images/Robotizovanі_datčiki.jpg
         :align: center
         
         Различите врсте сензора
