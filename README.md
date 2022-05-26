@@ -1,8 +1,8 @@
-# Programiranje za prvi razred specijalizovanih IT odeljenja 
+# Primene savremenog računarstva za 4. razred gimnazije
 
-Ovaj repozitorijum posvećen je kursu za Programiranje za prvi razred specijalizovanih IT odeljenja. 
+Ovaj repozitorijum posvećen je kursu za Primene savremenog računarstva za 4. razred gimnazije. 
 
-Kurs je na Petljom portalu dotupan ovde: [https://petlja.org/kurs/369/0](https://petlja.org/kurs/369/)
+Kurs je na Petljom portalu dotupan ovde: [https://petlja.org/kurs/7193/0](https://petlja.org/kurs/7193/)
 
 Kurs možete itegrisati u svoj LMS koristeći SCORM pakete koji se mogu preuzeti sa: https://github.com/Petlja/specit1_prog/releases
 
