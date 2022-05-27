@@ -1,0 +1,338 @@
+courseId: kurs_gim4_savremeno_racunarstvo
+description:
+  externalLinks: []
+  longDescription: '<div class="document">
+
+    <p>Овај курс је намењен ученицима четвртог разреда гимназија свих смерова за предмет
+    Рачунарство и информатика. Курс прати одговарајући програм наставе и учења у делу
+    који се односи на тему &quot;Области примене савременог рачунарства&quot;, а која
+    се обично обрађује на крају школске године. Првенствени циљ изучавања ове теме
+    је стицање опште културе, па дато градиво треба схватити пре свега као информативно,
+    односно као основу за разговор и размену искустава. Након летимичног упознавања
+    са садржајем, курс може да послужи и као полазна тачка за детаљнију обраду неких
+    од описаних области примене рачунарства. Уколико се неке изабране области обрађују
+    групно, садржај курса може да се комбинује са другим, повезаним материјалима на
+    интернету.</p>
+
+    <p>&lt;p&gt;
+
+    &lt;a rel=&quot;license&quot; href=&quot;<a class="reference external" href="https://creativecommons.org/licenses/by/4.0/deed.sr_LATN">https://creativecommons.org/licenses/by/4.0/deed.sr_LATN</a>&quot;&gt;
+
+    &lt;img alt=&quot;Creative Commons License&quot; style=&quot;border-width:0&quot;
+    src=&quot;https://i.creativecommons.org/l/by/4.0/88x31.png&quot; /&gt;&lt;/a&gt;
+
+    &lt;br /&gt;Овај курс Фондација Петља објавила je под лиценцом &lt;a rel=&quot;license&quot;
+    href=&quot;https://creativecommons.org/licenses/by/4.0/deed.sr_LATN&quot;&gt;Creative
+    Commons Autorstvo 4.0 Međunarodna Licenca (CC BY 4.0)&lt;/a&gt;.
+
+    &lt;/p&gt;</p>
+
+    </div>
+
+    '
+  requirements:
+  - Интернет прегледач (браузер)
+  shortDescription: Примене савременог рачунарства
+  toc:
+  - Интернет ствари и паметни градови
+  - Вештачка интелигенција
+  - Мaшинско учење
+  - Обрада великих количина података
+  - Роботика
+  - Криптографија
+  - Квантни рачунари
+  willLearn:
+  - Шта је интернет ствари, које су његове типичне примене и како он може да побољша
+    живот у градовима
+  - Чиме се све бави вештачка интелигенција и какве ризике и дилеме са собом носи
+  - Који видови мaшинског учења постоје и какве проблеме решавају
+  - Шта је big data и у каквој је вези са науком о подацима
+  - које су особине савремених робота, од чега се роботи састоје и за шта се све користе
+  - Шта је криптовање, како се корсити криптовање помоћу јавног и тајног кључа, шта
+    је хеширање, који су задаци модерне криптографије и како се они остварују употребном
+    поменутих техника криптовања и хеширања
+  - Шта су квантни рачунари, на којим принципима функционишу, које су њихове предности
+    и могуће примене
+lang: sr-Cyrl
+lessons:
+- activities:
+  - description: ''
+    file: uvod.html
+    guid: e2ff28b9-c7c2-4636-aea9-90612fa746c3
+    src: uvod.rst
+    title: Увод
+    type: reading
+  archived-activities: []
+  description: ''
+  folder: 0_uvod
+  guid: 85660235-1883-4b55-abdd-10e508301e33
+  normalized_title: Увод
+  title: Увод
+- activities:
+  - description: ''
+    file: a_IOT.html
+    guid: 80e41858-5d7c-46d3-b6fe-85f6d3824a1e
+    src: a_IOT.rst
+    title: Интернет ствари
+    type: reading
+  - description: ''
+    file: b_IOT_primene.html
+    guid: dd2c1d10-5f8b-4749-b529-c88f521c16a8
+    src: b_IOT_primene.rst
+    title: Примене интернета ствари
+    type: reading
+  - description: ''
+    file: c_pametni_gradovi.html
+    guid: 15512081-f8f9-4010-9751-fe34020d7f9f
+    src: c_pametni_gradovi.rst
+    title: Паметни градови
+    type: reading
+  - description: ''
+    file: d_IOT_quiz.html
+    guid: 5f2e50fb-b0d5-466f-aa2f-543dcea5c664
+    src: d_IOT_quiz.rst
+    title: Интернет ствари и паметни градови - квиз
+    type: quiz
+  archived-activities: []
+  description: ''
+  folder: 1_IOT
+  guid: 2f56c73d-fd5f-43ec-a927-3d1e05eb0cce
+  normalized_title: Интернет ствари и паметни градови
+  title: Интернет ствари и паметни градови
+- activities:
+  - description: ''
+    file: a_ai_uvod.html
+    guid: 002a278d-ec2d-485f-818e-d34bd347a976
+    src: a_ai_uvod.rst
+    title: Увод
+    type: reading
+  - description: ''
+    file: b_ai_pojam.html
+    guid: 5aaeca37-ab8b-4947-b4f8-33dcc9659f6d
+    src: b_ai_pojam.rst
+    title: Шта је вештачка интелигенција
+    type: reading
+  - description: ''
+    file: c_ai_vidovi.html
+    guid: a857a5b2-7c48-4c70-b998-a3117f569312
+    src: c_ai_vidovi.rst
+    title: Видови вештачке интелигенције
+    type: reading
+  - description: ''
+    file: d_ai_ciljevi.html
+    guid: 31d764a6-9e7f-4852-8296-6203fba3e5f0
+    src: d_ai_ciljevi.rst
+    title: Циљеви вештачке интелигенције
+    type: reading
+  - description: ''
+    file: e_ai_rizici_i_dileme.html
+    guid: 117e5fe3-4699-4fd8-aab6-5c71ddf96c9d
+    src: e_ai_rizici_i_dileme.rst
+    title: Ризици и дилеме
+    type: reading
+  - description: ''
+    file: f_vestacka_inteligencija_quiz.html
+    guid: c8300644-c518-4ecb-885a-75cee8db33fe
+    src: f_vestacka_inteligencija_quiz.rst
+    title: Вештачка интелигенција - квиз
+    type: quiz
+  archived-activities: []
+  description: ''
+  folder: 2_vestacka_inteligencija
+  guid: 41ca12c3-b9a9-4445-b395-ae3602c89f7f
+  normalized_title: Вештачка интелигенција
+  title: Вештачка интелигенција
+- activities:
+  - description: ''
+    file: a_ml_pojam.html
+    guid: cd7d1422-e221-46cc-8a16-c9c61e9055d1
+    src: a_ml_pojam.rst
+    title: Шта је машинско учење
+    type: reading
+  - description: ''
+    file: b_ml_vidovi.html
+    guid: 591fddfa-59c2-4f7b-8f53-707cfb427e95
+    src: b_ml_vidovi.rst
+    title: Видови машинског учења
+    type: reading
+  - description: ''
+    file: c_masinsko_ucenje_quiz.html
+    guid: 1a97eebf-f4b8-470e-bd64-2cc5cacdf6ee
+    src: c_masinsko_ucenje_quiz.rst
+    title: Мaшинско учење - квиз
+    type: quiz
+  archived-activities: []
+  description: ''
+  folder: 3_masinsko_ucenje
+  guid: e05891e3-5b14-421f-a74a-33aca256d882
+  normalized_title: Мaшинско учење
+  title: Мaшинско учење
+- activities:
+  - description: ''
+    file: a_analiza_podataka.html
+    guid: f8864b3b-43fb-4f69-9ff4-365227090e73
+    src: a_analiza_podataka.rst
+    title: Доношење одлука на основу података
+    type: reading
+  - description: ''
+    file: b_big_data.html
+    guid: 4291b479-95da-4f43-82ba-0779fbada036
+    src: b_big_data.rst
+    title: Велике количине података
+    type: reading
+  - description: ''
+    file: c_tehnologija.html
+    guid: e035693a-04e2-4301-a2e5-cb253c0a41f8
+    src: c_tehnologija.rst
+    title: Технологије иза великих количина података
+    type: reading
+  - description: ''
+    file: d_nauka_o_podacima.html
+    guid: b96c92aa-6642-4d97-8b19-1777fca8a25f
+    src: d_nauka_o_podacima.rst
+    title: Анализа података и наука о подацима
+    type: reading
+  - description: ''
+    file: e_primene.html
+    guid: a116df9e-0610-49b6-91ca-79279e158559
+    src: e_primene.rst
+    title: Примене науке о подацима
+    type: reading
+  - description: ''
+    file: f_big_data_quiz.html
+    guid: 83fb2291-9361-4ee4-b207-8f778bca28dd
+    src: f_big_data_quiz.rst
+    title: Обрада великих количина података - квиз
+    type: quiz
+  archived-activities: []
+  description: ''
+  folder: 4_big_data
+  guid: 0face7cf-c49c-4b9e-bfc4-65e687b66488
+  normalized_title: Обрада великих количина података
+  title: Обрада великих количина података
+- activities:
+  - description: ''
+    file: a_robotika_uvod.html
+    guid: d5ea359b-6e35-437a-a3fa-a33363c5cadc
+    src: a_robotika_uvod.rst
+    title: Увод
+    type: reading
+  - description: ''
+    file: b_robot_osobine_delovi.html
+    guid: 0de15b10-3231-43c2-b688-e8c559e86691
+    src: b_robot_osobine_delovi.rst
+    title: Шта је робот
+    type: reading
+  - description: ''
+    file: c_robotika_primene.html
+    guid: b24be0b9-abdf-4cef-95de-1587d1935488
+    src: c_robotika_primene.rst
+    title: Неке примене робота
+    type: reading
+  - description: ''
+    file: d_robotika_quiz.html
+    guid: 575a2944-aa4d-4a04-bb4d-431e3a1f2950
+    src: d_robotika_quiz.rst
+    title: Роботика - квиз
+    type: quiz
+  archived-activities: []
+  description: ''
+  folder: 5_robotika
+  guid: 53bd0382-7adb-4f6f-8e16-20c04bbfda29
+  normalized_title: Роботика
+  title: Роботика
+- activities:
+  - description: ''
+    file: a_kriptografija_osnovno.html
+    guid: a8efabd2-7893-4e4f-aa0b-fc2ddb79566e
+    src: a_kriptografija_osnovno.rst
+    title: Основни појмови
+    type: reading
+  - description: ''
+    file: b_javni_kljuc.html
+    guid: 6d868211-2a8e-4018-bf24-4fb254ca1186
+    src: b_javni_kljuc.rst
+    title: Криптовање помоћу јавног кључа
+    type: reading
+  - description: ''
+    file: c_rsa.html
+    guid: 743a4abb-419d-47a5-9bbc-505aaf080f88
+    src: c_rsa.rst
+    title: Алгоритам RSA
+    type: reading
+  - description: ''
+    file: d_zadaci_danas.html
+    guid: 3a65af78-8dce-4268-ad6c-c0a86bd7016e
+    src: d_zadaci_danas.rst
+    title: Задаци модерне криптографије
+    type: reading
+  - description: ''
+    file: e_hesiranje.html
+    guid: 4afc046d-4559-4c23-b232-a4f58b14035c
+    src: e_hesiranje.rst
+    title: Kриптографијa и хеширање
+    type: reading
+  - description: ''
+    file: f_kriptografija_quiz.html
+    guid: 6963a0ea-5ba4-473e-92e8-7cf35ba82e5a
+    src: f_kriptografija_quiz.rst
+    title: Криптографија - квиз
+    type: quiz
+  archived-activities: []
+  description: ''
+  folder: 6_kriptografija
+  guid: 89cbd425-75ad-4860-b85a-59331a13f68c
+  normalized_title: Криптографија
+  title: Криптографија
+- activities:
+  - description: ''
+    file: a_kvantni_rac_uvod.html
+    guid: bb0dfee7-69c4-4de4-956a-4b38e43f3d21
+    src: a_kvantni_rac_uvod.rst
+    title: Квантни рачунари
+    type: reading
+  - description: ''
+    file: b_kvantni_rac_principi.html
+    guid: 3538d5aa-4096-4966-b97d-05eb60a65b46
+    src: b_kvantni_rac_principi.rst
+    title: Основни принципи рада квантних рачунара
+    type: reading
+  - description: ''
+    file: c_kvantni_rac_primene.html
+    guid: 5ac733ad-3138-4266-a677-892320e1455c
+    src: c_kvantni_rac_primene.rst
+    title: Могуће примене квантних рачунара
+    type: reading
+  - description: ''
+    file: d_kvantni_rac_proizvodnja.html
+    guid: 49ad81ab-5a75-4ad8-a189-24ab9461651c
+    src: d_kvantni_rac_proizvodnja.rst
+    title: Производња квантних рачунара
+    type: reading
+  - description: ''
+    file: e_kvantni_racunari_quiz.html
+    guid: d5e6660e-8a73-4250-8ba3-0b708cf0a908
+    src: e_kvantni_racunari_quiz.rst
+    title: Квантни рачунари - квиз
+    type: quiz
+  archived-activities: []
+  description: ''
+  folder: 7_kvantni_racunari
+  guid: 90947185-e1d1-493a-88af-f40a10b6b22e
+  normalized_title: Квантни рачунари
+  title: Квантни рачунари
+- activities:
+  - description: ''
+    file: zakljucak.html
+    guid: aabe3352-ae69-4d45-ba17-c768d17f1ecb
+    src: zakljucak.rst
+    title: Закључак
+    type: reading
+  archived-activities: []
+  description: ''
+  folder: 8_zakljucak
+  guid: daf48f12-3726-41ad-a040-f72edb85fd11
+  normalized_title: Закључак
+  title: Закључак
+title: Области примене савременог рачунарства за четврти разред гимназије природни
+  смер

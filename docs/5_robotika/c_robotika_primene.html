@@ -1,0 +1,568 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="sr-Cyrl">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Неке примене робота</title>
+    <link rel="stylesheet" type="text/css" href="../_static/activecode.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/codemirror.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/clickable.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/pytutor.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/modal-basic.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/datafile.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/dragndrop.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/fitb.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/matrixeq.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/parsons.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/lib/prettify.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/poll.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/showEval.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/tabbedstuff.css" />
+    <link rel="stylesheet" type="text/css" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/video.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/webgldemo.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/webglinteractive.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/karel.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/notes.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/simanim.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/pycode.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/p5js.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/gallery.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/dbDirective.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/associations.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/regex-check.css" />
+    <link rel="stylesheet" href="../_static/basic.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/user-highlights.css" type="text/css" />
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.1/css/all.css" type="text/css" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro" type="text/css" />
+    <link rel="stylesheet" href="../_static/bootstrap-4.0.0-dist/css/bootstrap.min.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/flatly.min.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/petlja-course.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/nbstyle.css" type="text/css" />
+    <script id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
+    <script type="text/javascript" src="../_static/runestonebase.js"></script>
+    <script type="text/javascript" src="../_static/skulpt.min.js"></script>
+    <script type="text/javascript" src="../_static/skulpt-stdlib.js"></script>
+    <script type="text/javascript" src="../_static/jquery.js"></script>
+    <script type="text/javascript" src="../_static/underscore.js"></script>
+    <script type="text/javascript" src="../_static/doctools.js"></script>
+    <script type="text/javascript" src="../_static/language_data.js"></script>
+    <script type="text/javascript" src="../_static/jquery.highlight.js"></script>
+    <script type="text/javascript" src="../_static/bookfuncs.js"></script>
+    <script type="text/javascript" src="../_static/codemirror.js"></script>
+    <script type="text/javascript" src="../_static/xml.js"></script>
+    <script type="text/javascript" src="../_static/css.js"></script>
+    <script type="text/javascript" src="../_static/python.js"></script>
+    <script type="text/javascript" src="../_static/htmlmixed.js"></script>
+    <script type="text/javascript" src="../_static/javascript.js"></script>
+    <script type="text/javascript" src="../_static/jquery_i18n/CLDRPluralRuleParser.js"></script>
+    <script type="text/javascript" src="../_static/jquery_i18n/jquery.i18n.js"></script>
+    <script type="text/javascript" src="../_static/jquery_i18n/jquery.i18n.messagestore.js"></script>
+    <script type="text/javascript" src="../_static/jquery_i18n/jquery.i18n.fallbacks.js"></script>
+    <script type="text/javascript" src="../_static/jquery_i18n/jquery.i18n.language.js"></script>
+    <script type="text/javascript" src="../_static/jquery_i18n/jquery.i18n.parser.js"></script>
+    <script type="text/javascript" src="../_static/jquery_i18n/jquery.i18n.emitter.js"></script>
+    <script type="text/javascript" src="../_static/jquery_i18n/jquery.i18n.emitter.bidi.js"></script>
+    <script type="text/javascript" src="../_static/activecode-i18n.en.js"></script>
+    <script type="text/javascript" src="../_static/activecode-i18n.sr-Cyrl.js"></script>
+    <script type="text/javascript" src="../_static/activecode.js"></script>
+    <script type="text/javascript" src="../_static/clike.js"></script>
+    <script type="text/javascript" src="../_static/timed_activecode.js"></script>
+    <script type="text/javascript" src="../_static/animationbase.js"></script>
+    <script type="text/javascript" src="../_static/mchoice.js"></script>
+    <script type="text/javascript" src="../_static/timedmc.js"></script>
+    <script type="text/javascript" src="../_static/timed.js"></script>
+    <script type="text/javascript" src="../_static/mchoice-i18n.en.js"></script>
+    <script type="text/javascript" src="../_static/mchoice-i18n.sr-Cyrl.js"></script>
+    <script type="text/javascript" src="../_static/clickable.js"></script>
+    <script type="text/javascript" src="../_static/timedclickable.js"></script>
+    <script type="text/javascript" src="../_static/d3.v2.min.js"></script>
+    <script type="text/javascript" src="../_static/jquery.ba-bbq.min.js"></script>
+    <script type="text/javascript" src="../_static/jquery.jsPlumb-1.3.10-all-min.js"></script>
+    <script type="text/javascript" src="../_static/pytutor.js"></script>
+    <script type="text/javascript" src="../_static/codelens.js"></script>
+    <script type="text/javascript" src="../_static/skulpt.min.js"></script>
+    <script type="text/javascript" src="../_static/skulpt-stdlib.js"></script>
+    <script type="text/javascript" src="../_static/datafile.js"></script>
+    <script type="text/javascript" src="../_static/dragndrop.js"></script>
+    <script type="text/javascript" src="../_static/timeddnd.js"></script>
+    <script type="text/javascript" src="../_static/dragndrop-i18n.en.js"></script>
+    <script type="text/javascript" src="../_static/dragndrop-i18n.sr-Cyrl.js"></script>
+    <script type="text/javascript" src="../_static/fitb.js"></script>
+    <script type="text/javascript" src="../_static/timedfitb.js"></script>
+    <script type="text/javascript" src="../_static/fitb-i18n.en.js"></script>
+    <script type="text/javascript" src="../_static/fitb-i18n.sr-Cyrl.js"></script>
+    <script type="text/javascript" src="../_static/matrixeq.js"></script>
+    <script type="text/javascript" src="../_static/lib/prettify.js"></script>
+    <script type="text/javascript" src="../_static/lib/hammer.min.js"></script>
+    <script type="text/javascript" src="../_static/parsons.js"></script>
+    <script type="text/javascript" src="../_static/parsons-i18n.en.js"></script>
+    <script type="text/javascript" src="../_static/parsons-i18n.sr-Cyrl.js"></script>
+    <script type="text/javascript" src="../_static/timedparsons.js"></script>
+    <script type="text/javascript" src="../_static/poll.js"></script>
+    <script type="text/javascript" src="../_static/reveal.js"></script>
+    <script type="text/javascript" src="../_static/shortanswer.js"></script>
+    <script type="text/javascript" src="../_static/timed_shortanswer.js"></script>
+    <script type="text/javascript" src="../_static/showEval.js"></script>
+    <script type="text/javascript" src="../_static/tabbedstuff.js"></script>
+    <script type="text/javascript" src="../_static/runestonevideo.js"></script>
+    <script type="text/javascript" src="../_static/webglinteractive.js"></script>
+    <script type="text/javascript" src="../_static/FileSaver.min.js"></script>
+    <script type="text/javascript" src="../_static/Blob.js"></script>
+    <script type="text/javascript" src="../_static/karelCorner.js"></script>
+    <script type="text/javascript" src="../_static/karelRobot.js"></script>
+    <script type="text/javascript" src="../_static/karelWorld.js"></script>
+    <script type="text/javascript" src="../_static/karelRobotDrawer.js"></script>
+    <script type="text/javascript" src="../_static/karelUI.js"></script>
+    <script type="text/javascript" src="../_static/karel.js"></script>
+    <script type="text/javascript" src="../_static/karel-i18n.en.js"></script>
+    <script type="text/javascript" src="../_static/karel-i18n.sr-Cyrl.js"></script>
+    <script type="text/javascript" src="../_static/notes.js"></script>
+    <script type="text/javascript" src="../_static/pygamelib-init.js"></script>
+    <script type="text/javascript" src="../_static/blockly/blockly_compressed.js"></script>
+    <script type="text/javascript" src="../_static/blockly/blocks_compressed.js"></script>
+    <script type="text/javascript" src="../_static/blockly/python_compressed.js"></script>
+    <script type="text/javascript" src="../_static/blockly/msg-sr.js"></script>
+    <script type="text/javascript" src="../_static/blockpy/utilities.js"></script>
+    <script type="text/javascript" src="../_static/blockpy/python_errors.js"></script>
+    <script type="text/javascript" src="../_static/blockpy/ast_node_visitor.js"></script>
+    <script type="text/javascript" src="../_static/blockpy/abstract_interpreter.js"></script>
+    <script type="text/javascript" src="../_static/blockpy/pytifa.js"></script>
+    <script type="text/javascript" src="../_static/blockpy/abstract_interpreter_definitions.js"></script>
+    <script type="text/javascript" src="../_static/blockpy/python_to_blockly.js"></script>
+    <script type="text/javascript" src="../_static/blockpy/imported.js"></script>
+    <script type="text/javascript" src="../_static/blockpy/blocks/class.js"></script>
+    <script type="text/javascript" src="../_static/blockpy/blocks/comment.js"></script>
+    <script type="text/javascript" src="../_static/blockpy/blocks/comprehensions.js"></script>
+    <script type="text/javascript" src="../_static/blockpy/blocks/dict.js"></script>
+    <script type="text/javascript" src="../_static/blockpy/blocks/if.js"></script>
+    <script type="text/javascript" src="../_static/blockpy/blocks/io.js"></script>
+    <script type="text/javascript" src="../_static/blockpy/blocks/lists.js"></script>
+    <script type="text/javascript" src="../_static/blockpy/blocks/sets.js"></script>
+    <script type="text/javascript" src="../_static/blockpy/blocks/loops.js"></script>
+    <script type="text/javascript" src="../_static/blockpy/blocks/parking.js"></script>
+    <script type="text/javascript" src="../_static/blockpy/blocks/tuple.js"></script>
+    <script type="text/javascript" src="../_static/blockpy/blocks/turtles.js"></script>
+    <script type="text/javascript" src="../_static/blockpy/blocks/text.js"></script>
+    <script type="text/javascript" src="../_static/blockpy-modal.js"></script>
+    <script type="text/javascript" src="../_static/simanim.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/pyodide/v0.16.1/full/pyodide.js"></script>
+    <script type="text/javascript" src="../_static/pycode.js"></script>
+    <script type="text/javascript" src="//toolness.github.io/p5.js-widget/p5-widget.js"></script>
+    <script type="text/javascript" src="../_static/p5js.js"></script>
+    <script type="text/javascript" src="../_static/gallery.js"></script>
+    <script type="text/javascript" src="../_static/dbDirective.js"></script>
+    <script type="text/javascript" src="../_static/sql.js"></script>
+    <script type="text/javascript" src="../_static/associations.js"></script>
+    <script type="text/javascript" src="../_static/associations-i18n.en.js"></script>
+    <script type="text/javascript" src="../_static/associations-i18n.sr-Cyrl.js"></script>
+    <script type="text/javascript" src="../_static/regex-check.js"></script>
+    <script type="text/javascript" src="../_static/regex-check-i18n.en.js"></script>
+    <script type="text/javascript" src="../_static/regex-check-i18n.sr-Cyrl.js"></script>
+    <script type="text/javascript" src="../_static/translations.js"></script>
+    <script async="async" type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/latest.js?config=TeX-AMS-MML_HTMLorMML"></script>
+    <script type="text/javascript" src="../_static/jquery-ui-1.10.3.custom.min.js"></script>
+    <script type="text/javascript" src="../_static/jquery-fix.js"></script>
+    <script type="text/javascript" src="../_static/bootstrap-4.0.0-dist/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="../_static/bootstrap-4.0.0-dist/js/bootstrap.bundle.min.js"></script>
+    <script type="text/javascript" src="../_static/bootstrap-sphinx.js"></script>
+    <script type="text/javascript" src="../_static/waypoints.min.js"></script>
+    <script type="text/javascript" src="../_static/rangy-core.js"></script>
+    <script type="text/javascript" src="../_static/rangy-textrange.js"></script>
+    <script type="text/javascript" src="../_static/rangy-cssclassapplier.js"></script>
+    <script type="text/javascript" src="../_static/user-highlights.js"></script>
+    <script type="text/javascript" src="../_static/jquery.idle-timer.js"></script>
+    <script type="text/javascript" src="../_static/processing-1.4.1.min.js"></script>
+    <script type="text/javascript" src="../_static/jquery.hotkey.js"></script>
+    <script type="text/javascript" src="../_static/jquery-migrate-1.2.1.min.js"></script>
+    <script type="text/javascript" src="../_static/course-errors.js"></script>
+    <script type="text/javascript" src="../_static/petlja.js"></script>
+    <script type="text/javascript" src="../_static/require.js"></script>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge,chrome=1'>
+    <meta content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0' name='viewport' />
+    <link rel="shortcut icon" href="../_static/favicon.ico" type="image/ico" />
+    <script type="text/javascript">
+      eBookConfig = {};
+      eBookConfig.host = 'http://127.0.0.1:8000' ? 'http://127.0.0.1:8000' : 'http://127.0.0.1:8000';
+      eBookConfig.app = eBookConfig.host + '/runestone';
+      eBookConfig.ajaxURL = eBookConfig.app + '/ajax/';
+      eBookConfig.course = 'gim4_primene_racunarstva';
+      eBookConfig.logLevel = '0';
+      eBookConfig.loginRequired = 'false';
+      eBookConfig.build_info = "";
+      eBookConfig.isLoggedIn = false;
+      eBookConfig.useRunestoneServices = false;
+      eBookConfig.python3 = true;
+      eBookConfig.basecourse = 'gim4_primene_racunarstva';
+      eBookConfig.runestone_version = '';
+      eBookConfig.imagesDir = '../_images/';
+      eBookConfig.staticDir = '../_static/';
+      if (typeof (Sk) != "undefined")
+        Sk.imgPath = eBookConfig.imagesDir;
+    </script>
+
+  </head>
+
+  <body>
+
+
+
+<div id="navbar" class="content-header">
+  <div class="right-side-nav">
+    
+</div>
+
+<div class="left-side-nav">
+  <div class="course-logo-nav">
+      <a target="_blank" href="https://petlja.org">
+          <img src="../_static/img/petlja-logo-wt.svg" alt="petlja.org" id="lightPetljaLogo">
+      </a>
+  </div>
+  <div class="course-logo-nav-kabinet">
+      <a target="_blank" href="https://petlja.org/net.kabinet">
+          <img src="../_static/img/netkabinet-logo-strelica-wt.svg" alt="petlja.org" id="lightNetKabinetLogo">
+      </a>
+  </div>
+</div>
+
+
+<div class="content-header-label" id = "content-header-label" href="../">Примене савременог рачунарства</div>
+
+</div>
+
+
+
+
+<div class="petljaCourseContainer">
+
+<div class="petljaCourseContent">
+  
+           <div class="tableOfContent">
+            <h5> Садржај </h5>
+            </div>
+           <div>
+                <div class="courseContentsSection">
+                <div class="lecture-div courseContentsSectionHeadline" id=lecture-0_uvod>
+                    <h5>Увод</h5>
+                    <i class="fas fa-angle-down caret-position "> </i>
+                    <i class="fas fa-angle-up caret-position d-none"></i>
+                </div>
+                <div class="courseContentsSubSection d-none"><a href=../0_uvod/uvod.html><div class="studioLecture" id=activity-uvod><i class="fas fa-file-alt activity-icon"></i>Увод</div></a>
+                </div>
+            </div>
+                
+                <div class="courseContentsSection">
+                <div class="lecture-div courseContentsSectionHeadline" id=lecture-1_IOT>
+                    <h5>Интернет ствари и паметни градови</h5>
+                    <i class="fas fa-angle-down caret-position "> </i>
+                    <i class="fas fa-angle-up caret-position d-none"></i>
+                </div>
+                <div class="courseContentsSubSection d-none"><a href=../1_IOT/a_IOT.html><div class="studioLecture" id=activity-a_IOT><i class="fas fa-file-alt activity-icon"></i>Интернет ствари</div></a>
+                <a href=../1_IOT/b_IOT_primene.html><div class="studioLecture" id=activity-b_IOT_primene><i class="fas fa-file-alt activity-icon"></i>Примене интернета ствари</div></a>
+                <a href=../1_IOT/c_pametni_gradovi.html><div class="studioLecture" id=activity-c_pametni_gradovi><i class="fas fa-file-alt activity-icon"></i>Паметни градови</div></a>
+                <a href=../1_IOT/d_IOT_quiz.html><div class="studioLecture" id=activity-d_IOT_quiz><i class="far fa-question-circle activity-icon"></i>Интернет ствари и паметни градови - квиз</div></a>
+                </div>
+            </div>
+                
+                <div class="courseContentsSection">
+                <div class="lecture-div courseContentsSectionHeadline" id=lecture-2_vestacka_inteligencija>
+                    <h5>Вештачка интелигенција</h5>
+                    <i class="fas fa-angle-down caret-position "> </i>
+                    <i class="fas fa-angle-up caret-position d-none"></i>
+                </div>
+                <div class="courseContentsSubSection d-none"><a href=../2_vestacka_inteligencija/a_ai_uvod.html><div class="studioLecture" id=activity-a_ai_uvod><i class="fas fa-file-alt activity-icon"></i>Увод</div></a>
+                <a href=../2_vestacka_inteligencija/b_ai_pojam.html><div class="studioLecture" id=activity-b_ai_pojam><i class="fas fa-file-alt activity-icon"></i>Шта је вештачка интелигенција</div></a>
+                <a href=../2_vestacka_inteligencija/c_ai_vidovi.html><div class="studioLecture" id=activity-c_ai_vidovi><i class="fas fa-file-alt activity-icon"></i>Видови вештачке интелигенције</div></a>
+                <a href=../2_vestacka_inteligencija/d_ai_ciljevi.html><div class="studioLecture" id=activity-d_ai_ciljevi><i class="fas fa-file-alt activity-icon"></i>Циљеви вештачке интелигенције</div></a>
+                <a href=../2_vestacka_inteligencija/e_ai_rizici_i_dileme.html><div class="studioLecture" id=activity-e_ai_rizici_i_dileme><i class="fas fa-file-alt activity-icon"></i>Ризици и дилеме</div></a>
+                <a href=../2_vestacka_inteligencija/f_vestacka_inteligencija_quiz.html><div class="studioLecture" id=activity-f_vestacka_inteligencija_quiz><i class="far fa-question-circle activity-icon"></i>Вештачка интелигенција - квиз</div></a>
+                </div>
+            </div>
+                
+                <div class="courseContentsSection">
+                <div class="lecture-div courseContentsSectionHeadline" id=lecture-3_masinsko_ucenje>
+                    <h5>Мaшинско учење</h5>
+                    <i class="fas fa-angle-down caret-position "> </i>
+                    <i class="fas fa-angle-up caret-position d-none"></i>
+                </div>
+                <div class="courseContentsSubSection d-none"><a href=../3_masinsko_ucenje/a_ml_pojam.html><div class="studioLecture" id=activity-a_ml_pojam><i class="fas fa-file-alt activity-icon"></i>Шта је машинско учење</div></a>
+                <a href=../3_masinsko_ucenje/b_ml_vidovi.html><div class="studioLecture" id=activity-b_ml_vidovi><i class="fas fa-file-alt activity-icon"></i>Видови машинског учења</div></a>
+                <a href=../3_masinsko_ucenje/c_masinsko_ucenje_quiz.html><div class="studioLecture" id=activity-c_masinsko_ucenje_quiz><i class="far fa-question-circle activity-icon"></i>Мaшинско учење - квиз</div></a>
+                </div>
+            </div>
+                
+                <div class="courseContentsSection">
+                <div class="lecture-div courseContentsSectionHeadline" id=lecture-4_big_data>
+                    <h5>Обрада великих количина података</h5>
+                    <i class="fas fa-angle-down caret-position "> </i>
+                    <i class="fas fa-angle-up caret-position d-none"></i>
+                </div>
+                <div class="courseContentsSubSection d-none"><a href=../4_big_data/a_analiza_podataka.html><div class="studioLecture" id=activity-a_analiza_podataka><i class="fas fa-file-alt activity-icon"></i>Доношење одлука на основу података</div></a>
+                <a href=../4_big_data/b_big_data.html><div class="studioLecture" id=activity-b_big_data><i class="fas fa-file-alt activity-icon"></i>Велике количине података</div></a>
+                <a href=../4_big_data/c_tehnologija.html><div class="studioLecture" id=activity-c_tehnologija><i class="fas fa-file-alt activity-icon"></i>Технологије иза великих количина података</div></a>
+                <a href=../4_big_data/d_nauka_o_podacima.html><div class="studioLecture" id=activity-d_nauka_o_podacima><i class="fas fa-file-alt activity-icon"></i>Анализа података и наука о подацима</div></a>
+                <a href=../4_big_data/e_primene.html><div class="studioLecture" id=activity-e_primene><i class="fas fa-file-alt activity-icon"></i>Примене науке о подацима</div></a>
+                <a href=../4_big_data/f_big_data_quiz.html><div class="studioLecture" id=activity-f_big_data_quiz><i class="far fa-question-circle activity-icon"></i>Обрада великих количина података - квиз</div></a>
+                </div>
+            </div>
+                
+                <div class="courseContentsSection">
+                <div class="lecture-div courseContentsSectionHeadline" id=lecture-5_robotika>
+                    <h5>Роботика</h5>
+                    <i class="fas fa-angle-down caret-position "> </i>
+                    <i class="fas fa-angle-up caret-position d-none"></i>
+                </div>
+                <div class="courseContentsSubSection d-none"><a href=../5_robotika/a_robotika_uvod.html><div class="studioLecture" id=activity-a_robotika_uvod><i class="fas fa-file-alt activity-icon"></i>Увод</div></a>
+                <a href=../5_robotika/b_robot_osobine_delovi.html><div class="studioLecture" id=activity-b_robot_osobine_delovi><i class="fas fa-file-alt activity-icon"></i>Шта је робот</div></a>
+                <a href=../5_robotika/c_robotika_primene.html><div class="studioLecture" id=activity-c_robotika_primene><i class="fas fa-file-alt activity-icon"></i>Неке примене робота</div></a>
+                <a href=../5_robotika/d_robotika_quiz.html><div class="studioLecture" id=activity-d_robotika_quiz><i class="far fa-question-circle activity-icon"></i>Роботика - квиз</div></a>
+                </div>
+            </div>
+                
+                <div class="courseContentsSection">
+                <div class="lecture-div courseContentsSectionHeadline" id=lecture-6_kriptografija>
+                    <h5>Криптографија</h5>
+                    <i class="fas fa-angle-down caret-position "> </i>
+                    <i class="fas fa-angle-up caret-position d-none"></i>
+                </div>
+                <div class="courseContentsSubSection d-none"><a href=../6_kriptografija/a_kriptografija_osnovno.html><div class="studioLecture" id=activity-a_kriptografija_osnovno><i class="fas fa-file-alt activity-icon"></i>Основни појмови</div></a>
+                <a href=../6_kriptografija/b_javni_kljuc.html><div class="studioLecture" id=activity-b_javni_kljuc><i class="fas fa-file-alt activity-icon"></i>Криптовање помоћу јавног кључа</div></a>
+                <a href=../6_kriptografija/c_rsa.html><div class="studioLecture" id=activity-c_rsa><i class="fas fa-file-alt activity-icon"></i>Алгоритам RSA</div></a>
+                <a href=../6_kriptografija/d_zadaci_danas.html><div class="studioLecture" id=activity-d_zadaci_danas><i class="fas fa-file-alt activity-icon"></i>Задаци модерне криптографије</div></a>
+                <a href=../6_kriptografija/e_hesiranje.html><div class="studioLecture" id=activity-e_hesiranje><i class="fas fa-file-alt activity-icon"></i>Kриптографијa и хеширање</div></a>
+                <a href=../6_kriptografija/f_kriptografija_quiz.html><div class="studioLecture" id=activity-f_kriptografija_quiz><i class="far fa-question-circle activity-icon"></i>Криптографија - квиз</div></a>
+                </div>
+            </div>
+                
+                <div class="courseContentsSection">
+                <div class="lecture-div courseContentsSectionHeadline" id=lecture-7_kvantni_racunari>
+                    <h5>Квантни рачунари</h5>
+                    <i class="fas fa-angle-down caret-position "> </i>
+                    <i class="fas fa-angle-up caret-position d-none"></i>
+                </div>
+                <div class="courseContentsSubSection d-none"><a href=../7_kvantni_racunari/a_kvantni_rac_uvod.html><div class="studioLecture" id=activity-a_kvantni_rac_uvod><i class="fas fa-file-alt activity-icon"></i>Квантни рачунари</div></a>
+                <a href=../7_kvantni_racunari/b_kvantni_rac_principi.html><div class="studioLecture" id=activity-b_kvantni_rac_principi><i class="fas fa-file-alt activity-icon"></i>Основни принципи рада квантних рачунара</div></a>
+                <a href=../7_kvantni_racunari/c_kvantni_rac_primene.html><div class="studioLecture" id=activity-c_kvantni_rac_primene><i class="fas fa-file-alt activity-icon"></i>Могуће примене квантних рачунара</div></a>
+                <a href=../7_kvantni_racunari/d_kvantni_rac_proizvodnja.html><div class="studioLecture" id=activity-d_kvantni_rac_proizvodnja><i class="fas fa-file-alt activity-icon"></i>Производња квантних рачунара</div></a>
+                <a href=../7_kvantni_racunari/e_kvantni_racunari_quiz.html><div class="studioLecture" id=activity-e_kvantni_racunari_quiz><i class="far fa-question-circle activity-icon"></i>Квантни рачунари - квиз</div></a>
+                </div>
+            </div>
+                
+                <div class="courseContentsSection">
+                <div class="lecture-div courseContentsSectionHeadline" id=lecture-8_zakljucak>
+                    <h5>Закључак</h5>
+                    <i class="fas fa-angle-down caret-position "> </i>
+                    <i class="fas fa-angle-up caret-position d-none"></i>
+                </div>
+                <div class="courseContentsSubSection d-none"><a href=../8_zakljucak/zakljucak.html><div class="studioLecture" id=activity-zakljucak><i class="fas fa-file-alt activity-icon"></i>Закључак</div></a>
+                </div>
+            </div>
+                </div>
+</div>
+
+
+
+<div class="lectureContent">
+
+  <div id="errors">
+  </div>
+  
+  <div class="lectureContentMaterial">
+  
+    <div id="main-content">
+    
+  <div class="section" id="id1">
+<h1>Неке примене робота<a class="headerlink" href="#id1" title="Permalink to this headline">¶</a></h1>
+<div class="section" id="id2">
+<h2>У индустрији<a class="headerlink" href="#id2" title="Permalink to this headline">¶</a></h2>
+<p>Прве и до сада најмасовније примене робота биле су у индустрији. Улога робота у почетку је била да
+по утврђеним трасама довозе сировине до обичних фабричких машина, као и да одвозе и слажу
+полупроизводе и готове производе. Са напретком науке и технологије, добијени су роботи који
+могу нпр. да учествују у склапању аутомобила и електронских уређаја. У таквим, прецизним али
+рутинским и монотоним пословима, човек је склон грешкама услед замора. Зато је пожељно да
+такви процеси што мање зависе од човека. Данашњи роботи захваљујући камерама и другим сензорима захтевају
+мање финих подешавања и могу у већој мери да се самостално прилагоде задатку. Мада (још увек) нису у
+потпуности преузели производњу, роботи су као много бржи и поузданији од људи, значајно повећали
+продуктивност и квалитет производа у фабрикама у којима се примењују.</p>
+<p>Први индустријски роботи су били крајње опасни по човека, јер нису имали начина да региструју његово
+присуство. Зато су људи морали строго да воде рачуна о процедурама при раду са роботом (нпр. када
+смеју да приђу роботу ради повремене интервенције). Да би се избегли несрећни случајеви, роботи су
+смештани у кавезе, а отварање врата кавеза би заустављало рад робота.</p>
+<p>Данас постоје и тзв. <strong>колаборативни роботи</strong>, или скраћено
+<a class="reference external" href="https://en.wikipedia.org/wiki/Cobot">коботи</a>, који су знатно безбеднији по човека. Безбедност може
+да се постигне на различите начине, као што су:</p>
+<ul class="simple">
+<li><p>опремљеност већим бројем сензора који детектују присуство човека и контакт са њим, што овим роботима
+омогућава да помоћу софтвера прилагоде понашање и избегну повређивање човека</p></li>
+<li><p>ограничавање брзине делова робота и силе која се примењује при њиховом померању</p></li>
+<li><p>употреба лакших материјала са заобљеним ивицама при изради робота, што смањује тежину повреде у
+случају да до ње ипак дође.</p></li>
+</ul>
+<p>На тај начин, роботи и људи могу да раде у истом простору без опасности по човека.</p>
+</div>
+<div class="section" id="id4">
+<h2>У лабораторији<a class="headerlink" href="#id4" title="Permalink to this headline">¶</a></h2>
+<p>Као и у фабрикама, научна истраживања у лабораторијама често захтевају велики број понављања неког
+монотоног поступка. Као што је поменуто, роботи су у таквим пословима одавно превазишли људе. Тако
+су се, на пример, роботи показали као незаменљиви при развоју нових фармацеутских производа. Додатни
+разлог за употребу робота у овим пословима је безбедност, јер се смањује изложеност људи разним
+хемијским средствима или бактеријама, као и могућност проблема који могу да настану због људских
+грешака.</p>
+<p>Роботи се из истих разлога (брзина, поузданост, безбедност по човека) користе и за биомедицинске
+анализе људских узорака (нпр. крви) и друге послове у лабораторијама.</p>
+</div>
+<div class="section" id="id5">
+<h2>У кући<a class="headerlink" href="#id5" title="Permalink to this headline">¶</a></h2>
+<p>Већ одавно су доступни роботи који умеју да обављају кућне послове попут усисавања прашине, брисања
+пода и слично. Овакви уређаји углавном немају могућност оријентације у простору, већ се у случају
+наиласка на препреку само упућују у другом правцу. Напреднији роботи овог типа за откривање препрека
+користе ултразвучне сензоре, али и даље могу да имају проблема (могу нпр. да падну низ степениште).
+Уколико се овакви роботи крећу по отвореном простору (нпр. робот за кошење траве у дворишту), потребно
+је дуж граница предвиђеног простора обезбедити сигнал који их зауставља (нпр. електрични или магнетни).</p>
+<p>Роботи могу да служе и за обезбеђивање стана или куће. Такви роботи су способни да открију дим и тако
+спрече пожар, или да у случају провале обавесте власника и полицију. Пошто су опремљни камерама и
+мобилним телефоном, власник може да види све што камере робота забележе.</p>
+<p>У последње време расте популарност и робота намењених за помоћ старим или слабо покретним лицима.
+Ови роботи могу да принесу власнику храну или пиће, да их подсете на важне тренутке, да им дозирају
+и правовремено дају лекове, да им организују забаву у виду игара, да ћаскају и праве друшто, да
+одржавају комуникацију са рођацима или лекаром и слично. Неки од ових робота могу и да подигну
+власника из инвалидских колица и пренесу га у кревет и обрнуто.</p>
+
+    <div class="course-box course-box-special">
+        <div class="course-content">
+            <h4 class="carbox-title">
+                <img class="corner-image float-right" src="../_static/img/question-mark.png" />
+            </h4>
+            <p>
+<p>Која бисте побољшања предложили за описане кућне роботе? Имате ли идеју како би та побољшања
+могла да се остваре? Дискутујте у групи о могућим побољшањима.</p>
+<p>Покушајте да сазнате да ли су нека од побољшања која сте поменули већ остварена. Ако нису,
+покушајте да одговорите зашто нису и да ли слична побољшања могу да се очекују у блиској будућности.</p>
+
+    </p></div></div>
+</div>
+<div class="section" id="id6">
+<h2>У забави и едукацији<a class="headerlink" href="#id6" title="Permalink to this headline">¶</a></h2>
+<p>Постоје разне верзије робота, који могу да се купе готови и спремни за употребу, или расклопљени.
+Неки од њих су намењени већ предшколском узрасту. Ти роботи су потпуно прилагођени малој деци,
+могу да се украшавају на разне начине, а веома једноставно се програмирају притискањем дугмади на
+самом роботу. У стању су да се крећу по задатим упутствима, да свирају задату мелодију или да
+остављају траг при кретању по одговарајућој подлози. Захваљујући свим тим особинама, ови роботи
+представљају могућност да се деца у врло раном узрасту кроз игру заинтересују за ову област и
+науче нешто о њој.</p>
+<p>Многи роботи се користе превасходно као вежба младим роботичарима и другим ентузијастима у градњи
+робота. Ова област обухвата различите нивое сложености робота, примерене различитим узрастима и
+нивоима знања и искуства, па роботичари имају прилику да постепено напредују кроз све веће изазове.
+Роботи који се граде ради вежбе, често уједно служе и за разне видове забаве. Поменућемо неке
+типове робота који спадају у ову групу.</p>
+<ul class="simple">
+<li><p>Роботи - играчке, слични су претходним, с тим да их је потребно склопити. Обично постоји више
+начина, тј. облика у које ови роботи могу да се склопе, зависно од мисије у којој ће бити
+употребљени. Оваквим роботима могу са кућног рачунара да се пренесу различити управљачки програми.
+Роботи су опремљени сензорима помоћу којих могу да виде и чују, а у стању су да изговарају одређене
+фразе и извршавају команде корисника.</p></li>
+<li><p>Борбени роботи. Ове роботе конструишу нешто напреднији роботичари, са циљем даљег увежбавања.
+На популарним такмичењима овакви роботи се међусобно боре са циљем да онемогуће функционисање
+другог робота. Борбени роботи могу да буду даљински управљани, а постоје и борбе аутономних робота.</p></li>
+<li><p>Роботи који решавају унапред прописане задатке. И за овакве роботе се организују такмичења, а
+на сваком такмичењу се постављају специфични задаци проналажења неке локације, савладавања
+препрека, хватања и преношења предмета и слично. Ови роботи су по правилу аутономни.</p></li>
+<li><p>Роботи који опонашају спортисте, изводећи разне акробације, скокове, одржавајући равнотежу у
+тешким условима и слично. Овакви роботи се виђају и у рекламним спотовима појединих компанија.</p></li>
+<li><p>Роботи - уметници. Ово је још један од великих и популарних изазова за роботичаре. Познати успеси
+су роботи који свирају флауту, виолину, виолончело, или клавир. Неки роботи су у стању са свирају
+непознату мелодију на стандардним инструментима само на основу нота стављених испред њих.
+Направљен је и робот - сликар, који је у стању да успешно слика портрете захваљујући специјалном
+софтверу, који управља камером и роботизованом руком.</p></li>
+</ul>
+
+    <div class="course-box course-box-special">
+        <div class="course-content">
+            <h4 class="carbox-title">
+                <img class="corner-image float-right" src="../_static/img/question-mark.png" />
+            </h4>
+            <p>
+<p>Размислите какве је све проблеме потребно решити приликом прављења оваквих робота и која су све
+знања потребна за то. На пример, шта је све протребно да би робот могао да на стандардном музичком
+инструменту свира непознату мелодију, када се пред њега стави нотни запис те мелодије? Поставите
+себи слично питање и за друге наведене примере и покушајте да одговорите. Продискутујте своја
+размишљања у групи.</p>
+
+    </p></div></div>
+</div>
+<div class="section" id="id7">
+<h2>На пословима неприступачним или опасним по човека<a class="headerlink" href="#id7" title="Permalink to this headline">¶</a></h2>
+<p>Роботи се користе за разне послове који су ризични по човека. То може да буде и релативно обичан
+посао као што је прање прозора високих зграда, али и провера исправности нуклеарне електране, скупљање
+и запечаћивање радиоактивног отпада у одговарајућу бурад којом даље могу и људи безбедно да рукују,
+гашење пожара на посебно опасним местима где има лако запаљивих материја (алкохол, бензин, боје,
+лакови и друге хемикалије), испитивање канализације, трагање за жртвама земљотреса, истраживања у
+екстремним условима (кратери вулкана, велике дубине у океанима, васиона, друге планете) итд.
+Због значаја оваквих мисија, роботи на овим пословима су често даљински управљани. Изузетак су роботи
+на веома удаљеним задацима (нпр. истраживање Марса), где слање сигнала у оба смера касни по неколико
+минута, па човек не би ни могао довољно брзо да реагује у свим потребним ситуацијама.</p>
+<p>Осим што човеку доноси безбедност, употреба робота у екстремним условима може да буде и јефтинија,
+јер роботу није потребно обезбедити специфичну темпреатуру, снабдевање ваздухом, водом, храном, заштиту
+од радијације и све друге услове који би човеку били неопходни. Додатно, ако је повратак на полазну
+локацију скупљи од самог робота, робот по завршетку мисије и слања снимака и других резултата
+истраживања може да буде и напуштен.</p>
+<p>Посебно дизајнирани роботи се користе и за проучавање копнених и водених животињских врста, на начин
+који те животиње не узнемирава и тиме омогућава да буду снимљене током њиховог природног понашања.</p>
+<hr class="docutils" />
+<p>Поред набројаних, постоје и многе друге, мање или више познате примене робота. Једна популарна примена
+робота се своди на преношење различитих ствари у различитим срединама. Овакви роботи могу веома да се
+разликују у зависности од конкретније намене. Већ смо поменули пример робота који у фабрикама доносе
+потребне сировине до машина које их обрађују, а односе обрађене материјале, или готове производе.
+Слично томе, роботи у болницама могу да допремају пацијентима храну и лекове, а лекарима потребну
+документацију, снимке и друго што им је потребно. Сличне примене су могуће у складиштима, а постоје и
+ресторани у којима роботи послужују госте. Ови роботи могу да користе различита решења да би се држали
+задате путање, односно да би умели да одреде своју тренутну локацију. Неки од њих се крећу по специјалној
+вођици налик на шину, неки су способни да прате траку на поду помоћу оптичког или инфрацрвеног сензора,
+а неки умеју чак да користе и лифтове. Углавном се крећу по просторима који су претходно специјално
+уређени и опремљени, да би роботима олакшали оријентацију и одређивање сопствене локације.</p>
+</div>
+</div>
+
+
+    </div>
+    
+    <div>
+<div class="lecture-prev-next-toggle">
+  <a  href="b_robot_osobine_delovi.html" id="prevLectureLink" class="lecture-toggler-arrows"><i class="fas fa-arrow-left fa"></i> <span> Претходна лекција </span> </a>
+  
+  <a id="nextLectureLink" class="lecture-toggler-arrows"><span> Следећа лекција</span>  <i class="fas fa-arrow-right fa"></i> </a>
+</div>
+
+<script type="text/javascript">
+  $('#relations-prev').tooltip({'placement':'right', 'selector': '', 'delay': { show: 100, hide: 50}});
+  $('#relations-next').tooltip({'placement':'left', 'selector': '', 'delay': { show: 100, hide: 50}});
+</script>
+</div>
+
+    
+  </div>
+</div>
+
+<div class="petljadoc-resources">
+  <span class="pull-left">(Created using  <a href="https://pypi.org/project/Sphinx/">Swinx</a>, <a href="http://runestoneinteractive.org/">RunestoneComponents</a> and <a href="https://github.com/Petlja/PetljaDoc">PetljaDoc</a>) <br> © 2022 Petlja</span>
+</div>
+
+
+<div class="lectureToolbox">
+
+  <label class="font-size-toggle" id="fontSizeToggle">
+
+      <i class="fas fa-font"></i><label>Слова</label>
+  </label>
+  <div class="font-change d-none" id="fontChangeModal">
+      <span class="dec-letter-icon" id="decLetterIcon">A-</span>
+      <label id="currentFontSize">16</label>
+      <span class="inc-letter-icon" id="incLetterIcon">A+</span>
+  </div>
+</div>
+
+</div>
+
+  </body>
+</html>

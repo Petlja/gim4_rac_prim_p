@@ -1,0 +1,562 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="sr-Cyrl">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Видови машинског учења</title>
+    <link rel="stylesheet" type="text/css" href="../_static/activecode.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/codemirror.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/clickable.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/pytutor.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/modal-basic.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/datafile.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/dragndrop.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/fitb.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/matrixeq.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/parsons.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/lib/prettify.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/poll.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/showEval.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/tabbedstuff.css" />
+    <link rel="stylesheet" type="text/css" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/video.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/webgldemo.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/webglinteractive.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/karel.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/notes.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/simanim.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/pycode.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/p5js.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/gallery.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/dbDirective.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/associations.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/regex-check.css" />
+    <link rel="stylesheet" href="../_static/basic.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/user-highlights.css" type="text/css" />
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.1/css/all.css" type="text/css" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro" type="text/css" />
+    <link rel="stylesheet" href="../_static/bootstrap-4.0.0-dist/css/bootstrap.min.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/flatly.min.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/petlja-course.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/nbstyle.css" type="text/css" />
+    <script id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
+    <script type="text/javascript" src="../_static/runestonebase.js"></script>
+    <script type="text/javascript" src="../_static/skulpt.min.js"></script>
+    <script type="text/javascript" src="../_static/skulpt-stdlib.js"></script>
+    <script type="text/javascript" src="../_static/jquery.js"></script>
+    <script type="text/javascript" src="../_static/underscore.js"></script>
+    <script type="text/javascript" src="../_static/doctools.js"></script>
+    <script type="text/javascript" src="../_static/language_data.js"></script>
+    <script type="text/javascript" src="../_static/jquery.highlight.js"></script>
+    <script type="text/javascript" src="../_static/bookfuncs.js"></script>
+    <script type="text/javascript" src="../_static/codemirror.js"></script>
+    <script type="text/javascript" src="../_static/xml.js"></script>
+    <script type="text/javascript" src="../_static/css.js"></script>
+    <script type="text/javascript" src="../_static/python.js"></script>
+    <script type="text/javascript" src="../_static/htmlmixed.js"></script>
+    <script type="text/javascript" src="../_static/javascript.js"></script>
+    <script type="text/javascript" src="../_static/jquery_i18n/CLDRPluralRuleParser.js"></script>
+    <script type="text/javascript" src="../_static/jquery_i18n/jquery.i18n.js"></script>
+    <script type="text/javascript" src="../_static/jquery_i18n/jquery.i18n.messagestore.js"></script>
+    <script type="text/javascript" src="../_static/jquery_i18n/jquery.i18n.fallbacks.js"></script>
+    <script type="text/javascript" src="../_static/jquery_i18n/jquery.i18n.language.js"></script>
+    <script type="text/javascript" src="../_static/jquery_i18n/jquery.i18n.parser.js"></script>
+    <script type="text/javascript" src="../_static/jquery_i18n/jquery.i18n.emitter.js"></script>
+    <script type="text/javascript" src="../_static/jquery_i18n/jquery.i18n.emitter.bidi.js"></script>
+    <script type="text/javascript" src="../_static/activecode-i18n.en.js"></script>
+    <script type="text/javascript" src="../_static/activecode-i18n.sr-Cyrl.js"></script>
+    <script type="text/javascript" src="../_static/activecode.js"></script>
+    <script type="text/javascript" src="../_static/clike.js"></script>
+    <script type="text/javascript" src="../_static/timed_activecode.js"></script>
+    <script type="text/javascript" src="../_static/animationbase.js"></script>
+    <script type="text/javascript" src="../_static/mchoice.js"></script>
+    <script type="text/javascript" src="../_static/timedmc.js"></script>
+    <script type="text/javascript" src="../_static/timed.js"></script>
+    <script type="text/javascript" src="../_static/mchoice-i18n.en.js"></script>
+    <script type="text/javascript" src="../_static/mchoice-i18n.sr-Cyrl.js"></script>
+    <script type="text/javascript" src="../_static/clickable.js"></script>
+    <script type="text/javascript" src="../_static/timedclickable.js"></script>
+    <script type="text/javascript" src="../_static/d3.v2.min.js"></script>
+    <script type="text/javascript" src="../_static/jquery.ba-bbq.min.js"></script>
+    <script type="text/javascript" src="../_static/jquery.jsPlumb-1.3.10-all-min.js"></script>
+    <script type="text/javascript" src="../_static/pytutor.js"></script>
+    <script type="text/javascript" src="../_static/codelens.js"></script>
+    <script type="text/javascript" src="../_static/skulpt.min.js"></script>
+    <script type="text/javascript" src="../_static/skulpt-stdlib.js"></script>
+    <script type="text/javascript" src="../_static/datafile.js"></script>
+    <script type="text/javascript" src="../_static/dragndrop.js"></script>
+    <script type="text/javascript" src="../_static/timeddnd.js"></script>
+    <script type="text/javascript" src="../_static/dragndrop-i18n.en.js"></script>
+    <script type="text/javascript" src="../_static/dragndrop-i18n.sr-Cyrl.js"></script>
+    <script type="text/javascript" src="../_static/fitb.js"></script>
+    <script type="text/javascript" src="../_static/timedfitb.js"></script>
+    <script type="text/javascript" src="../_static/fitb-i18n.en.js"></script>
+    <script type="text/javascript" src="../_static/fitb-i18n.sr-Cyrl.js"></script>
+    <script type="text/javascript" src="../_static/matrixeq.js"></script>
+    <script type="text/javascript" src="../_static/lib/prettify.js"></script>
+    <script type="text/javascript" src="../_static/lib/hammer.min.js"></script>
+    <script type="text/javascript" src="../_static/parsons.js"></script>
+    <script type="text/javascript" src="../_static/parsons-i18n.en.js"></script>
+    <script type="text/javascript" src="../_static/parsons-i18n.sr-Cyrl.js"></script>
+    <script type="text/javascript" src="../_static/timedparsons.js"></script>
+    <script type="text/javascript" src="../_static/poll.js"></script>
+    <script type="text/javascript" src="../_static/reveal.js"></script>
+    <script type="text/javascript" src="../_static/shortanswer.js"></script>
+    <script type="text/javascript" src="../_static/timed_shortanswer.js"></script>
+    <script type="text/javascript" src="../_static/showEval.js"></script>
+    <script type="text/javascript" src="../_static/tabbedstuff.js"></script>
+    <script type="text/javascript" src="../_static/runestonevideo.js"></script>
+    <script type="text/javascript" src="../_static/webglinteractive.js"></script>
+    <script type="text/javascript" src="../_static/FileSaver.min.js"></script>
+    <script type="text/javascript" src="../_static/Blob.js"></script>
+    <script type="text/javascript" src="../_static/karelCorner.js"></script>
+    <script type="text/javascript" src="../_static/karelRobot.js"></script>
+    <script type="text/javascript" src="../_static/karelWorld.js"></script>
+    <script type="text/javascript" src="../_static/karelRobotDrawer.js"></script>
+    <script type="text/javascript" src="../_static/karelUI.js"></script>
+    <script type="text/javascript" src="../_static/karel.js"></script>
+    <script type="text/javascript" src="../_static/karel-i18n.en.js"></script>
+    <script type="text/javascript" src="../_static/karel-i18n.sr-Cyrl.js"></script>
+    <script type="text/javascript" src="../_static/notes.js"></script>
+    <script type="text/javascript" src="../_static/pygamelib-init.js"></script>
+    <script type="text/javascript" src="../_static/blockly/blockly_compressed.js"></script>
+    <script type="text/javascript" src="../_static/blockly/blocks_compressed.js"></script>
+    <script type="text/javascript" src="../_static/blockly/python_compressed.js"></script>
+    <script type="text/javascript" src="../_static/blockly/msg-sr.js"></script>
+    <script type="text/javascript" src="../_static/blockpy/utilities.js"></script>
+    <script type="text/javascript" src="../_static/blockpy/python_errors.js"></script>
+    <script type="text/javascript" src="../_static/blockpy/ast_node_visitor.js"></script>
+    <script type="text/javascript" src="../_static/blockpy/abstract_interpreter.js"></script>
+    <script type="text/javascript" src="../_static/blockpy/pytifa.js"></script>
+    <script type="text/javascript" src="../_static/blockpy/abstract_interpreter_definitions.js"></script>
+    <script type="text/javascript" src="../_static/blockpy/python_to_blockly.js"></script>
+    <script type="text/javascript" src="../_static/blockpy/imported.js"></script>
+    <script type="text/javascript" src="../_static/blockpy/blocks/class.js"></script>
+    <script type="text/javascript" src="../_static/blockpy/blocks/comment.js"></script>
+    <script type="text/javascript" src="../_static/blockpy/blocks/comprehensions.js"></script>
+    <script type="text/javascript" src="../_static/blockpy/blocks/dict.js"></script>
+    <script type="text/javascript" src="../_static/blockpy/blocks/if.js"></script>
+    <script type="text/javascript" src="../_static/blockpy/blocks/io.js"></script>
+    <script type="text/javascript" src="../_static/blockpy/blocks/lists.js"></script>
+    <script type="text/javascript" src="../_static/blockpy/blocks/sets.js"></script>
+    <script type="text/javascript" src="../_static/blockpy/blocks/loops.js"></script>
+    <script type="text/javascript" src="../_static/blockpy/blocks/parking.js"></script>
+    <script type="text/javascript" src="../_static/blockpy/blocks/tuple.js"></script>
+    <script type="text/javascript" src="../_static/blockpy/blocks/turtles.js"></script>
+    <script type="text/javascript" src="../_static/blockpy/blocks/text.js"></script>
+    <script type="text/javascript" src="../_static/blockpy-modal.js"></script>
+    <script type="text/javascript" src="../_static/simanim.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/pyodide/v0.16.1/full/pyodide.js"></script>
+    <script type="text/javascript" src="../_static/pycode.js"></script>
+    <script type="text/javascript" src="//toolness.github.io/p5.js-widget/p5-widget.js"></script>
+    <script type="text/javascript" src="../_static/p5js.js"></script>
+    <script type="text/javascript" src="../_static/gallery.js"></script>
+    <script type="text/javascript" src="../_static/dbDirective.js"></script>
+    <script type="text/javascript" src="../_static/sql.js"></script>
+    <script type="text/javascript" src="../_static/associations.js"></script>
+    <script type="text/javascript" src="../_static/associations-i18n.en.js"></script>
+    <script type="text/javascript" src="../_static/associations-i18n.sr-Cyrl.js"></script>
+    <script type="text/javascript" src="../_static/regex-check.js"></script>
+    <script type="text/javascript" src="../_static/regex-check-i18n.en.js"></script>
+    <script type="text/javascript" src="../_static/regex-check-i18n.sr-Cyrl.js"></script>
+    <script type="text/javascript" src="../_static/translations.js"></script>
+    <script async="async" type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/latest.js?config=TeX-AMS-MML_HTMLorMML"></script>
+    <script type="text/javascript" src="../_static/jquery-ui-1.10.3.custom.min.js"></script>
+    <script type="text/javascript" src="../_static/jquery-fix.js"></script>
+    <script type="text/javascript" src="../_static/bootstrap-4.0.0-dist/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="../_static/bootstrap-4.0.0-dist/js/bootstrap.bundle.min.js"></script>
+    <script type="text/javascript" src="../_static/bootstrap-sphinx.js"></script>
+    <script type="text/javascript" src="../_static/waypoints.min.js"></script>
+    <script type="text/javascript" src="../_static/rangy-core.js"></script>
+    <script type="text/javascript" src="../_static/rangy-textrange.js"></script>
+    <script type="text/javascript" src="../_static/rangy-cssclassapplier.js"></script>
+    <script type="text/javascript" src="../_static/user-highlights.js"></script>
+    <script type="text/javascript" src="../_static/jquery.idle-timer.js"></script>
+    <script type="text/javascript" src="../_static/processing-1.4.1.min.js"></script>
+    <script type="text/javascript" src="../_static/jquery.hotkey.js"></script>
+    <script type="text/javascript" src="../_static/jquery-migrate-1.2.1.min.js"></script>
+    <script type="text/javascript" src="../_static/course-errors.js"></script>
+    <script type="text/javascript" src="../_static/petlja.js"></script>
+    <script type="text/javascript" src="../_static/require.js"></script>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge,chrome=1'>
+    <meta content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0' name='viewport' />
+    <link rel="shortcut icon" href="../_static/favicon.ico" type="image/ico" />
+    <script type="text/javascript">
+      eBookConfig = {};
+      eBookConfig.host = 'http://127.0.0.1:8000' ? 'http://127.0.0.1:8000' : 'http://127.0.0.1:8000';
+      eBookConfig.app = eBookConfig.host + '/runestone';
+      eBookConfig.ajaxURL = eBookConfig.app + '/ajax/';
+      eBookConfig.course = 'gim4_primene_racunarstva';
+      eBookConfig.logLevel = '0';
+      eBookConfig.loginRequired = 'false';
+      eBookConfig.build_info = "";
+      eBookConfig.isLoggedIn = false;
+      eBookConfig.useRunestoneServices = false;
+      eBookConfig.python3 = true;
+      eBookConfig.basecourse = 'gim4_primene_racunarstva';
+      eBookConfig.runestone_version = '';
+      eBookConfig.imagesDir = '../_images/';
+      eBookConfig.staticDir = '../_static/';
+      if (typeof (Sk) != "undefined")
+        Sk.imgPath = eBookConfig.imagesDir;
+    </script>
+
+  </head>
+
+  <body>
+
+
+
+<div id="navbar" class="content-header">
+  <div class="right-side-nav">
+    
+</div>
+
+<div class="left-side-nav">
+  <div class="course-logo-nav">
+      <a target="_blank" href="https://petlja.org">
+          <img src="../_static/img/petlja-logo-wt.svg" alt="petlja.org" id="lightPetljaLogo">
+      </a>
+  </div>
+  <div class="course-logo-nav-kabinet">
+      <a target="_blank" href="https://petlja.org/net.kabinet">
+          <img src="../_static/img/netkabinet-logo-strelica-wt.svg" alt="petlja.org" id="lightNetKabinetLogo">
+      </a>
+  </div>
+</div>
+
+
+<div class="content-header-label" id = "content-header-label" href="../">Примене савременог рачунарства</div>
+
+</div>
+
+
+
+
+<div class="petljaCourseContainer">
+
+<div class="petljaCourseContent">
+  
+           <div class="tableOfContent">
+            <h5> Садржај </h5>
+            </div>
+           <div>
+                <div class="courseContentsSection">
+                <div class="lecture-div courseContentsSectionHeadline" id=lecture-0_uvod>
+                    <h5>Увод</h5>
+                    <i class="fas fa-angle-down caret-position "> </i>
+                    <i class="fas fa-angle-up caret-position d-none"></i>
+                </div>
+                <div class="courseContentsSubSection d-none"><a href=../0_uvod/uvod.html><div class="studioLecture" id=activity-uvod><i class="fas fa-file-alt activity-icon"></i>Увод</div></a>
+                </div>
+            </div>
+                
+                <div class="courseContentsSection">
+                <div class="lecture-div courseContentsSectionHeadline" id=lecture-1_IOT>
+                    <h5>Интернет ствари и паметни градови</h5>
+                    <i class="fas fa-angle-down caret-position "> </i>
+                    <i class="fas fa-angle-up caret-position d-none"></i>
+                </div>
+                <div class="courseContentsSubSection d-none"><a href=../1_IOT/a_IOT.html><div class="studioLecture" id=activity-a_IOT><i class="fas fa-file-alt activity-icon"></i>Интернет ствари</div></a>
+                <a href=../1_IOT/b_IOT_primene.html><div class="studioLecture" id=activity-b_IOT_primene><i class="fas fa-file-alt activity-icon"></i>Примене интернета ствари</div></a>
+                <a href=../1_IOT/c_pametni_gradovi.html><div class="studioLecture" id=activity-c_pametni_gradovi><i class="fas fa-file-alt activity-icon"></i>Паметни градови</div></a>
+                <a href=../1_IOT/d_IOT_quiz.html><div class="studioLecture" id=activity-d_IOT_quiz><i class="far fa-question-circle activity-icon"></i>Интернет ствари и паметни градови - квиз</div></a>
+                </div>
+            </div>
+                
+                <div class="courseContentsSection">
+                <div class="lecture-div courseContentsSectionHeadline" id=lecture-2_vestacka_inteligencija>
+                    <h5>Вештачка интелигенција</h5>
+                    <i class="fas fa-angle-down caret-position "> </i>
+                    <i class="fas fa-angle-up caret-position d-none"></i>
+                </div>
+                <div class="courseContentsSubSection d-none"><a href=../2_vestacka_inteligencija/a_ai_uvod.html><div class="studioLecture" id=activity-a_ai_uvod><i class="fas fa-file-alt activity-icon"></i>Увод</div></a>
+                <a href=../2_vestacka_inteligencija/b_ai_pojam.html><div class="studioLecture" id=activity-b_ai_pojam><i class="fas fa-file-alt activity-icon"></i>Шта је вештачка интелигенција</div></a>
+                <a href=../2_vestacka_inteligencija/c_ai_vidovi.html><div class="studioLecture" id=activity-c_ai_vidovi><i class="fas fa-file-alt activity-icon"></i>Видови вештачке интелигенције</div></a>
+                <a href=../2_vestacka_inteligencija/d_ai_ciljevi.html><div class="studioLecture" id=activity-d_ai_ciljevi><i class="fas fa-file-alt activity-icon"></i>Циљеви вештачке интелигенције</div></a>
+                <a href=../2_vestacka_inteligencija/e_ai_rizici_i_dileme.html><div class="studioLecture" id=activity-e_ai_rizici_i_dileme><i class="fas fa-file-alt activity-icon"></i>Ризици и дилеме</div></a>
+                <a href=../2_vestacka_inteligencija/f_vestacka_inteligencija_quiz.html><div class="studioLecture" id=activity-f_vestacka_inteligencija_quiz><i class="far fa-question-circle activity-icon"></i>Вештачка интелигенција - квиз</div></a>
+                </div>
+            </div>
+                
+                <div class="courseContentsSection">
+                <div class="lecture-div courseContentsSectionHeadline" id=lecture-3_masinsko_ucenje>
+                    <h5>Мaшинско учење</h5>
+                    <i class="fas fa-angle-down caret-position "> </i>
+                    <i class="fas fa-angle-up caret-position d-none"></i>
+                </div>
+                <div class="courseContentsSubSection d-none"><a href=../3_masinsko_ucenje/a_ml_pojam.html><div class="studioLecture" id=activity-a_ml_pojam><i class="fas fa-file-alt activity-icon"></i>Шта је машинско учење</div></a>
+                <a href=../3_masinsko_ucenje/b_ml_vidovi.html><div class="studioLecture" id=activity-b_ml_vidovi><i class="fas fa-file-alt activity-icon"></i>Видови машинског учења</div></a>
+                <a href=../3_masinsko_ucenje/c_masinsko_ucenje_quiz.html><div class="studioLecture" id=activity-c_masinsko_ucenje_quiz><i class="far fa-question-circle activity-icon"></i>Мaшинско учење - квиз</div></a>
+                </div>
+            </div>
+                
+                <div class="courseContentsSection">
+                <div class="lecture-div courseContentsSectionHeadline" id=lecture-4_big_data>
+                    <h5>Обрада великих количина података</h5>
+                    <i class="fas fa-angle-down caret-position "> </i>
+                    <i class="fas fa-angle-up caret-position d-none"></i>
+                </div>
+                <div class="courseContentsSubSection d-none"><a href=../4_big_data/a_analiza_podataka.html><div class="studioLecture" id=activity-a_analiza_podataka><i class="fas fa-file-alt activity-icon"></i>Доношење одлука на основу података</div></a>
+                <a href=../4_big_data/b_big_data.html><div class="studioLecture" id=activity-b_big_data><i class="fas fa-file-alt activity-icon"></i>Велике количине података</div></a>
+                <a href=../4_big_data/c_tehnologija.html><div class="studioLecture" id=activity-c_tehnologija><i class="fas fa-file-alt activity-icon"></i>Технологије иза великих количина података</div></a>
+                <a href=../4_big_data/d_nauka_o_podacima.html><div class="studioLecture" id=activity-d_nauka_o_podacima><i class="fas fa-file-alt activity-icon"></i>Анализа података и наука о подацима</div></a>
+                <a href=../4_big_data/e_primene.html><div class="studioLecture" id=activity-e_primene><i class="fas fa-file-alt activity-icon"></i>Примене науке о подацима</div></a>
+                <a href=../4_big_data/f_big_data_quiz.html><div class="studioLecture" id=activity-f_big_data_quiz><i class="far fa-question-circle activity-icon"></i>Обрада великих количина података - квиз</div></a>
+                </div>
+            </div>
+                
+                <div class="courseContentsSection">
+                <div class="lecture-div courseContentsSectionHeadline" id=lecture-5_robotika>
+                    <h5>Роботика</h5>
+                    <i class="fas fa-angle-down caret-position "> </i>
+                    <i class="fas fa-angle-up caret-position d-none"></i>
+                </div>
+                <div class="courseContentsSubSection d-none"><a href=../5_robotika/a_robotika_uvod.html><div class="studioLecture" id=activity-a_robotika_uvod><i class="fas fa-file-alt activity-icon"></i>Увод</div></a>
+                <a href=../5_robotika/b_robot_osobine_delovi.html><div class="studioLecture" id=activity-b_robot_osobine_delovi><i class="fas fa-file-alt activity-icon"></i>Шта је робот</div></a>
+                <a href=../5_robotika/c_robotika_primene.html><div class="studioLecture" id=activity-c_robotika_primene><i class="fas fa-file-alt activity-icon"></i>Неке примене робота</div></a>
+                <a href=../5_robotika/d_robotika_quiz.html><div class="studioLecture" id=activity-d_robotika_quiz><i class="far fa-question-circle activity-icon"></i>Роботика - квиз</div></a>
+                </div>
+            </div>
+                
+                <div class="courseContentsSection">
+                <div class="lecture-div courseContentsSectionHeadline" id=lecture-6_kriptografija>
+                    <h5>Криптографија</h5>
+                    <i class="fas fa-angle-down caret-position "> </i>
+                    <i class="fas fa-angle-up caret-position d-none"></i>
+                </div>
+                <div class="courseContentsSubSection d-none"><a href=../6_kriptografija/a_kriptografija_osnovno.html><div class="studioLecture" id=activity-a_kriptografija_osnovno><i class="fas fa-file-alt activity-icon"></i>Основни појмови</div></a>
+                <a href=../6_kriptografija/b_javni_kljuc.html><div class="studioLecture" id=activity-b_javni_kljuc><i class="fas fa-file-alt activity-icon"></i>Криптовање помоћу јавног кључа</div></a>
+                <a href=../6_kriptografija/c_rsa.html><div class="studioLecture" id=activity-c_rsa><i class="fas fa-file-alt activity-icon"></i>Алгоритам RSA</div></a>
+                <a href=../6_kriptografija/d_zadaci_danas.html><div class="studioLecture" id=activity-d_zadaci_danas><i class="fas fa-file-alt activity-icon"></i>Задаци модерне криптографије</div></a>
+                <a href=../6_kriptografija/e_hesiranje.html><div class="studioLecture" id=activity-e_hesiranje><i class="fas fa-file-alt activity-icon"></i>Kриптографијa и хеширање</div></a>
+                <a href=../6_kriptografija/f_kriptografija_quiz.html><div class="studioLecture" id=activity-f_kriptografija_quiz><i class="far fa-question-circle activity-icon"></i>Криптографија - квиз</div></a>
+                </div>
+            </div>
+                
+                <div class="courseContentsSection">
+                <div class="lecture-div courseContentsSectionHeadline" id=lecture-7_kvantni_racunari>
+                    <h5>Квантни рачунари</h5>
+                    <i class="fas fa-angle-down caret-position "> </i>
+                    <i class="fas fa-angle-up caret-position d-none"></i>
+                </div>
+                <div class="courseContentsSubSection d-none"><a href=../7_kvantni_racunari/a_kvantni_rac_uvod.html><div class="studioLecture" id=activity-a_kvantni_rac_uvod><i class="fas fa-file-alt activity-icon"></i>Квантни рачунари</div></a>
+                <a href=../7_kvantni_racunari/b_kvantni_rac_principi.html><div class="studioLecture" id=activity-b_kvantni_rac_principi><i class="fas fa-file-alt activity-icon"></i>Основни принципи рада квантних рачунара</div></a>
+                <a href=../7_kvantni_racunari/c_kvantni_rac_primene.html><div class="studioLecture" id=activity-c_kvantni_rac_primene><i class="fas fa-file-alt activity-icon"></i>Могуће примене квантних рачунара</div></a>
+                <a href=../7_kvantni_racunari/d_kvantni_rac_proizvodnja.html><div class="studioLecture" id=activity-d_kvantni_rac_proizvodnja><i class="fas fa-file-alt activity-icon"></i>Производња квантних рачунара</div></a>
+                <a href=../7_kvantni_racunari/e_kvantni_racunari_quiz.html><div class="studioLecture" id=activity-e_kvantni_racunari_quiz><i class="far fa-question-circle activity-icon"></i>Квантни рачунари - квиз</div></a>
+                </div>
+            </div>
+                
+                <div class="courseContentsSection">
+                <div class="lecture-div courseContentsSectionHeadline" id=lecture-8_zakljucak>
+                    <h5>Закључак</h5>
+                    <i class="fas fa-angle-down caret-position "> </i>
+                    <i class="fas fa-angle-up caret-position d-none"></i>
+                </div>
+                <div class="courseContentsSubSection d-none"><a href=../8_zakljucak/zakljucak.html><div class="studioLecture" id=activity-zakljucak><i class="fas fa-file-alt activity-icon"></i>Закључак</div></a>
+                </div>
+            </div>
+                </div>
+</div>
+
+
+
+<div class="lectureContent">
+
+  <div id="errors">
+  </div>
+  
+  <div class="lectureContentMaterial">
+  
+    <div id="main-content">
+    
+  <div class="section" id="id1">
+<h1>Видови машинског учења<a class="headerlink" href="#id1" title="Permalink to this headline">¶</a></h1>
+<p>Многобројне поступке машинског учења можемо грубо да разврстамо у две велике групе, које
+називамо ненадгледано учење (енгл. unsupervised learning) и надгледано учење (енгл. supervised
+learning). Многи аутори као трећи начин учења помињу и учење поткрепљивањем (енгл. reinforcement
+learning). У свим овим облицима учења подразумевамо да смо изворне податке трансформисали у
+низове нумеричких својстава, па сваки податак можемо да замислимо као тачку у вишедимензионом
+простору. Овде је број димензија једнак броју својстава која користимо за представљање података,
+а вредност сваког од тих својстава је по једна координата поменуте тачке.</p>
+<div class="section" id="id2">
+<h2>Ненадгледано учење<a class="headerlink" href="#id2" title="Permalink to this headline">¶</a></h2>
+<p>Ненадгледано учење, или учење без надзора, функционише тако што се систему за учење предочи
+велики број примера, а систем анализира дате податке и проналази различите правилности у њима. На
+основу пронађених правилности (образаца, патерна), овакав систем може да научи да дати примери
+нису равномерно распоређени у простору, већ да су на неки начин груписани, тј. да су примери у
+одређеним деловима простора много гушћи него у другим деловима. Циљ оваквог система за учење може
+да буде да дате примере организује тако, да за сваки нови предочени пример уме брзо да пронађе
+сличне примере (тј. блиске тачке у хипер-простору).</p>
+<p>Способност система да за дати пример брзо нађе друге, сличне примере је изузетно корисна. Неке од
+примена оваквих система су:</p>
+<ul class="simple">
+<li><p>сегментирање корисника, које омогућава предузећима да препознају типове својих корисника, креирају
+тзв. маркетинг персоне (замишљене типичне представнике група корисника) и тако ефикасније циљају кориснике</p></li>
+<li><p>системе препоручивања, који су у стању да на основу обављене куповине предложе друге сличне артикле, који
+би кориснику могли да буду интересантни (други који су купили то, купили су такође и ово). Овакви системи
+се нпр. често користе за препоручивање музике, филмова, књига, видео игара и сл.</p></li>
+<li><p>откривање плагијаризма, тј. сличности у ауторским делима, научним радовима итд.</p></li>
+<li><p>лабелирање нелабелираних података, о којем ће бити више речи нешто касније</p></li>
+</ul>
+<p>Да би био у стању да брзо нађе сличне примере, систем обично током тренинга препознаје групе сличних
+примера (тј. групе блиских тачака), које називамо кластери. Груписање података у кластере (енгл.
+data clustering), може да буде организовано и хијерархијски, тако да се у сваком кластеру поново
+проналазе мање групе међусобно још сличнијих података, тј. тачака на још мањем растојању.</p>
+<div class="figure align-center" id="id5">
+<img alt="../_images/klasteri.png" src="../_images/klasteri.png" />
+<p class="caption"><span class="caption-text">Кластери сличних примера, представљени блиским тачкама (хијерархијски модел)</span><a class="headerlink" href="#id5" title="Permalink to this image">¶</a></p>
+</div>
+<p>Код хијерархијски организованих кластера, поступак при појављивању новог примера може да тече овако:
+најпре се пронађе кластер чији је центар најближи новом примеру, затим се унутар тог кластера пронађе
+центар подкластера који је најближи, итд. до потребног нивоа хијерархије.</p>
+<p>Поред раније набројаних примера, постоје и многи други проблеми у којима груписање (кластеризација)
+података из скупа за тренинг помаже да се касније нови подаци брзо сврстају у неку од раније препознатих
+група (кластера).
+Такође, након што се установи образац груписања података, може да се развије систем који на основу
+тога открива и издваја аномалије у подацима. Додатно испитивање тих аномалија доводи до чишћења
+података од грешака, а може да доведе и до откривања атипичних података, који се даље посебно третирају
+у складу са својим значајем у конкретном типу проблема.</p>
+<p>Ненадгледано учење се користи и у многим другим доменима, које је заиста тешко систематично побројати.
+Овде можемо само да ради илустрације поменемо још пар разноврсних примера, као што су синтетисање
+говора на основу текста, проналажење оптималних стања (нпр. стање са минимумом енергије), или стварање
+креативног садржаја (компоновање музике, креативно писање, генерисање слика).</p>
+</div>
+<div class="section" id="id3">
+<h2>Надгледано учење<a class="headerlink" href="#id3" title="Permalink to this headline">¶</a></h2>
+<p>Надгледано учење, или учење под надзором, се од ненадгледаног разликује по томе што је пре учења
+потребно да човек (или неучећи алгоритам) на улазне податке постави ознаке које представљају жељени
+излаз. Ознаке на подацима називамо и лабеле (од енгл. labels - ознаке, етикете), а за означене податке
+кажемо да су лабелирани. Систем за надгледано учење покушава да научи пресликавање улазних података у
+дате ознаке - лабеле. Постоје две основне варијанте надгледаног учења: класификација и регресија.</p>
+<p><strong>У проблемима класификације</strong>, ознаке представљају одређене категорије. На пример,</p>
+<ul class="simple">
+<li><p>медицинске слике унутрашњих органа могу да буду класификоване у две категорије, које представљају
+слике здравих и оболелих органа</p></li>
+<li><p>слике појединачних слова могу да буду класификоване у категорије (класе), које одговарају појединим
+словима датог писма</p></li>
+<li><p>текстуалне поруке могу да буду класификоване у две категорије: жељене и нежељене (спам)</p></li>
+</ul>
+<p>итд. Класификација се користи да одреди којој категорији нешто припада. Програм добија велик број
+примера података које треба да класификује, заједно са ознаком (класом) којој подаци припадају, а
+учи да класификује нове, неозначене податке.</p>
+<p><strong>У проблемима регресије</strong> циљ је да се установи начин на који неки нумерички излаз зависи од улаза,
+односно да се статистички предвиди какве вредности ће имати излаз за другачији улаз. На пример, може
+да нас интересује како број поена на писменом задатку зависи од претходне оцене и времена проведеног
+у учењу, како зарада запослених зависи од њиховог образовања, старости, радног искуства и слично,
+како цена половног аутомобила зависи од модела, километраже, старости, одржавања итд.
+Регресиона анализа се и независно од машинског учења широко примењује у предвиђању и прогнозирању
+појава у разним областима, као што су економија, медицина, психологија и друге.</p>
+<p>И регресију у класификацију можемо да посматрамо као учење неке функције, тј. пресликавања. У
+класификаицији се улазни подаци пресликавају у дискретне категорије (коначан скуп вредности, често
+само две), док се у регресији улазни подаци пресликавају у непрекидну нумеричку величину.</p>
+<p>Постоје разне технике надгледаног учења, а најпопуларније су дрвета одлучивања и неуронске мреже.
+Сваки од ових приступа има своје подоблике и може да се даље разврстава.</p>
+<div class="line-block">
+<div class="line"><br /></div>
+</div>
+<p>Један од честих разлога због којих неки аналитички модел, добијен надгледаним учењем, може да покаже
+слабе резултате је неодговарајући капацитет за учење, с обзиром на величину скупа за тренинг. На
+пример, када је капацитет за учење превелики у односу на количину расположивих података за тренинг,
+долази до <strong>претераног уклапања</strong> (енгл. overfitting). Систем за учење у неком смислу превише добро
+научи расположиве податке, односно превише добро им се прилагоди (илустровано на следећој слици лево).</p>
+<div class="figure align-center" id="id6">
+<img alt="../_images/overfitting.png" src="../_images/overfitting.png" />
+<p class="caption"><span class="caption-text">Пример претераног уклапања у податке (лево)</span><a class="headerlink" href="#id6" title="Permalink to this image">¶</a></p>
+<div class="legend">
+<p>и грешака у тестирању или експлоатацији, насталих због тога (десно)</p>
+</div>
+</div>
+<p>Када систем због недовољно података током тренинга не успе добро да генерализује проблем, касније
+неће бити у стању да добро одговори у случајевима какве није имао прилике да види (претходна слика
+десно). Проблем оверфитовања (претераног уклапања) се у идеалној ситуацији решава обогаћивањем скупа
+података за учење. Ако то није изводљиво, боље је и да се смањи капацитет система да научи дате
+примере, да би систем боље генерализовао будуће инстанце проблема. Након усклађивања капацитета за
+учење и величине скупа за тренинг, систем може да има и лошије резултате на тренингу, али ће мање
+да греши касније, на тестирању или током експлоатације.</p>
+<div class="figure align-center" id="id7">
+<img alt="../_images/fitting.png" src="../_images/fitting.png" />
+<p class="caption"><span class="caption-text">Боља генерализација (лево) доводи до боље касније тачности (десно)</span><a class="headerlink" href="#id7" title="Permalink to this image">¶</a></p>
+</div>
+<p>Наравно, могуће је и да систем има недовољан капацитет за учење, а у том случају дешава се недовољно
+уклапање у примере из тренинга (енгл. underfitting). У овом случају обично треба другачије подесити
+тренинг и генерисати већи модел. На жалост, ово захтева и више меморије и процесорског времена за
+тренинг, па то може да постане уско грло.</p>
+<p>Другачији проблем настаје када скуп података за тренинг није репрезентативан. То значи да се неки
+типови примера у скупу за тренинг појављују несразмерно ретко у поређењу са њиховом учесталошћу у
+реалној примени. Тада систем не успева да научи одређену подврсту проблема, па касније на таквим
+примерима има слабе резултате (нпр. ако се систем за детекцију лица тренира само на лицима белаца,
+касније може да греши знатно више при детектовању лица људи црне расе, него што то чини са лицима
+белаца).</p>
+</div>
+<div class="section" id="id4">
+<h2>Учење поткрепљивањем<a class="headerlink" href="#id4" title="Permalink to this headline">¶</a></h2>
+<p>Учење поткрепљивањем је још један облик учења који можемо да запазимо и код људи и животиња.
+У многим ситуацијама у којима човек или животиња предузимају неку акцију, они немају одмах повратну
+информацију о томе колико је та акција била корисна. Повратна информација се добија само повремено,
+у виду награде или казне. При томе се не зна колико је која од појединачних акција допринела таквом
+исходу, већ само да су све оне заједно довеле до тог резултата. Временом, човек и животиња уче која
+понашања су сврсисходна, а која не. По овој аналогији са људима и животињама, од система се очекује
+низ одређених акција, без давања повратних информација након сваке појединачне акције. Код учења
+поткрепљивањем је уобичајено да се уместо израза систем за учење користи реч агент. Као и код овог
+типа учења у природи, тек након целог низа акција агент добија одговор у виду награде или казне.
+Агент је дизајниран да научи да максимизира будућу награду на крају низа активности. То значи да
+он кроз многогобројне покушаје и грешке постепено формира неку стратегију (енгл. policy) избора
+акција у датим ситуацијама, за коју претпоставља да доводи до највеће укупне награде.</p>
+<p>Овај начин учења је погодан за играње стратешких игара (нпр. шах). У играма често није јасно који
+потез је добар а који није, али на крају партије агент добија информацију о томе који играч је
+победио, па је та информација његово поткрепљење, тј. награда или казна. На овај начин могу да уче
+и роботи нпр. да се крећу у отежаним околностима, савладавају препреке, да се прикључе на пуњач, и
+слично. Такође, разни системи контроле и управљања могу кроз симулације да науче неку оптималну
+стратегију управљања (нпр. да уз минималан утрошак енергије постигну неки циљ).</p>
+<p>Учење поткрепљивањем се јавља у многобројним варијантама, према конкретном начину на који је
+организован процес учења. Један од изазова који је заједнички разним приступима је да се пронађе
+баланс између истраживања непознатог понашања и коришћења раније откривеног корисног понашања
+(енгл. exploration vs. exploitation).</p>
+</div>
+</div>
+
+
+    </div>
+    
+    <div>
+<div class="lecture-prev-next-toggle">
+  <a  href="a_ml_pojam.html" id="prevLectureLink" class="lecture-toggler-arrows"><i class="fas fa-arrow-left fa"></i> <span> Претходна лекција </span> </a>
+  
+  <a id="nextLectureLink" class="lecture-toggler-arrows"><span> Следећа лекција</span>  <i class="fas fa-arrow-right fa"></i> </a>
+</div>
+
+<script type="text/javascript">
+  $('#relations-prev').tooltip({'placement':'right', 'selector': '', 'delay': { show: 100, hide: 50}});
+  $('#relations-next').tooltip({'placement':'left', 'selector': '', 'delay': { show: 100, hide: 50}});
+</script>
+</div>
+
+    
+  </div>
+</div>
+
+<div class="petljadoc-resources">
+  <span class="pull-left">(Created using  <a href="https://pypi.org/project/Sphinx/">Swinx</a>, <a href="http://runestoneinteractive.org/">RunestoneComponents</a> and <a href="https://github.com/Petlja/PetljaDoc">PetljaDoc</a>) <br> © 2022 Petlja</span>
+</div>
+
+
+<div class="lectureToolbox">
+
+  <label class="font-size-toggle" id="fontSizeToggle">
+
+      <i class="fas fa-font"></i><label>Слова</label>
+  </label>
+  <div class="font-change d-none" id="fontChangeModal">
+      <span class="dec-letter-icon" id="decLetterIcon">A-</span>
+      <label id="currentFontSize">16</label>
+      <span class="inc-letter-icon" id="incLetterIcon">A+</span>
+  </div>
+</div>
+
+</div>
+
+  </body>
+</html>

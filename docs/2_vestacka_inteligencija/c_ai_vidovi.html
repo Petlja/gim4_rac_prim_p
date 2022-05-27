@@ -1,0 +1,625 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="sr-Cyrl">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Видови вештачке интелигенције</title>
+    <link rel="stylesheet" type="text/css" href="../_static/activecode.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/codemirror.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/clickable.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/pytutor.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/modal-basic.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/datafile.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/dragndrop.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/fitb.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/matrixeq.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/parsons.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/lib/prettify.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/poll.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/showEval.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/tabbedstuff.css" />
+    <link rel="stylesheet" type="text/css" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/video.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/webgldemo.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/webglinteractive.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/karel.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/notes.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/simanim.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/pycode.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/p5js.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/gallery.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/dbDirective.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/associations.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/regex-check.css" />
+    <link rel="stylesheet" href="../_static/basic.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/user-highlights.css" type="text/css" />
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.1/css/all.css" type="text/css" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro" type="text/css" />
+    <link rel="stylesheet" href="../_static/bootstrap-4.0.0-dist/css/bootstrap.min.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/flatly.min.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/petlja-course.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/nbstyle.css" type="text/css" />
+    <script id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
+    <script type="text/javascript" src="../_static/runestonebase.js"></script>
+    <script type="text/javascript" src="../_static/skulpt.min.js"></script>
+    <script type="text/javascript" src="../_static/skulpt-stdlib.js"></script>
+    <script type="text/javascript" src="../_static/jquery.js"></script>
+    <script type="text/javascript" src="../_static/underscore.js"></script>
+    <script type="text/javascript" src="../_static/doctools.js"></script>
+    <script type="text/javascript" src="../_static/language_data.js"></script>
+    <script type="text/javascript" src="../_static/jquery.highlight.js"></script>
+    <script type="text/javascript" src="../_static/bookfuncs.js"></script>
+    <script type="text/javascript" src="../_static/codemirror.js"></script>
+    <script type="text/javascript" src="../_static/xml.js"></script>
+    <script type="text/javascript" src="../_static/css.js"></script>
+    <script type="text/javascript" src="../_static/python.js"></script>
+    <script type="text/javascript" src="../_static/htmlmixed.js"></script>
+    <script type="text/javascript" src="../_static/javascript.js"></script>
+    <script type="text/javascript" src="../_static/jquery_i18n/CLDRPluralRuleParser.js"></script>
+    <script type="text/javascript" src="../_static/jquery_i18n/jquery.i18n.js"></script>
+    <script type="text/javascript" src="../_static/jquery_i18n/jquery.i18n.messagestore.js"></script>
+    <script type="text/javascript" src="../_static/jquery_i18n/jquery.i18n.fallbacks.js"></script>
+    <script type="text/javascript" src="../_static/jquery_i18n/jquery.i18n.language.js"></script>
+    <script type="text/javascript" src="../_static/jquery_i18n/jquery.i18n.parser.js"></script>
+    <script type="text/javascript" src="../_static/jquery_i18n/jquery.i18n.emitter.js"></script>
+    <script type="text/javascript" src="../_static/jquery_i18n/jquery.i18n.emitter.bidi.js"></script>
+    <script type="text/javascript" src="../_static/activecode-i18n.en.js"></script>
+    <script type="text/javascript" src="../_static/activecode-i18n.sr-Cyrl.js"></script>
+    <script type="text/javascript" src="../_static/activecode.js"></script>
+    <script type="text/javascript" src="../_static/clike.js"></script>
+    <script type="text/javascript" src="../_static/timed_activecode.js"></script>
+    <script type="text/javascript" src="../_static/animationbase.js"></script>
+    <script type="text/javascript" src="../_static/mchoice.js"></script>
+    <script type="text/javascript" src="../_static/timedmc.js"></script>
+    <script type="text/javascript" src="../_static/timed.js"></script>
+    <script type="text/javascript" src="../_static/mchoice-i18n.en.js"></script>
+    <script type="text/javascript" src="../_static/mchoice-i18n.sr-Cyrl.js"></script>
+    <script type="text/javascript" src="../_static/clickable.js"></script>
+    <script type="text/javascript" src="../_static/timedclickable.js"></script>
+    <script type="text/javascript" src="../_static/d3.v2.min.js"></script>
+    <script type="text/javascript" src="../_static/jquery.ba-bbq.min.js"></script>
+    <script type="text/javascript" src="../_static/jquery.jsPlumb-1.3.10-all-min.js"></script>
+    <script type="text/javascript" src="../_static/pytutor.js"></script>
+    <script type="text/javascript" src="../_static/codelens.js"></script>
+    <script type="text/javascript" src="../_static/skulpt.min.js"></script>
+    <script type="text/javascript" src="../_static/skulpt-stdlib.js"></script>
+    <script type="text/javascript" src="../_static/datafile.js"></script>
+    <script type="text/javascript" src="../_static/dragndrop.js"></script>
+    <script type="text/javascript" src="../_static/timeddnd.js"></script>
+    <script type="text/javascript" src="../_static/dragndrop-i18n.en.js"></script>
+    <script type="text/javascript" src="../_static/dragndrop-i18n.sr-Cyrl.js"></script>
+    <script type="text/javascript" src="../_static/fitb.js"></script>
+    <script type="text/javascript" src="../_static/timedfitb.js"></script>
+    <script type="text/javascript" src="../_static/fitb-i18n.en.js"></script>
+    <script type="text/javascript" src="../_static/fitb-i18n.sr-Cyrl.js"></script>
+    <script type="text/javascript" src="../_static/matrixeq.js"></script>
+    <script type="text/javascript" src="../_static/lib/prettify.js"></script>
+    <script type="text/javascript" src="../_static/lib/hammer.min.js"></script>
+    <script type="text/javascript" src="../_static/parsons.js"></script>
+    <script type="text/javascript" src="../_static/parsons-i18n.en.js"></script>
+    <script type="text/javascript" src="../_static/parsons-i18n.sr-Cyrl.js"></script>
+    <script type="text/javascript" src="../_static/timedparsons.js"></script>
+    <script type="text/javascript" src="../_static/poll.js"></script>
+    <script type="text/javascript" src="../_static/reveal.js"></script>
+    <script type="text/javascript" src="../_static/shortanswer.js"></script>
+    <script type="text/javascript" src="../_static/timed_shortanswer.js"></script>
+    <script type="text/javascript" src="../_static/showEval.js"></script>
+    <script type="text/javascript" src="../_static/tabbedstuff.js"></script>
+    <script type="text/javascript" src="../_static/runestonevideo.js"></script>
+    <script type="text/javascript" src="../_static/webglinteractive.js"></script>
+    <script type="text/javascript" src="../_static/FileSaver.min.js"></script>
+    <script type="text/javascript" src="../_static/Blob.js"></script>
+    <script type="text/javascript" src="../_static/karelCorner.js"></script>
+    <script type="text/javascript" src="../_static/karelRobot.js"></script>
+    <script type="text/javascript" src="../_static/karelWorld.js"></script>
+    <script type="text/javascript" src="../_static/karelRobotDrawer.js"></script>
+    <script type="text/javascript" src="../_static/karelUI.js"></script>
+    <script type="text/javascript" src="../_static/karel.js"></script>
+    <script type="text/javascript" src="../_static/karel-i18n.en.js"></script>
+    <script type="text/javascript" src="../_static/karel-i18n.sr-Cyrl.js"></script>
+    <script type="text/javascript" src="../_static/notes.js"></script>
+    <script type="text/javascript" src="../_static/pygamelib-init.js"></script>
+    <script type="text/javascript" src="../_static/blockly/blockly_compressed.js"></script>
+    <script type="text/javascript" src="../_static/blockly/blocks_compressed.js"></script>
+    <script type="text/javascript" src="../_static/blockly/python_compressed.js"></script>
+    <script type="text/javascript" src="../_static/blockly/msg-sr.js"></script>
+    <script type="text/javascript" src="../_static/blockpy/utilities.js"></script>
+    <script type="text/javascript" src="../_static/blockpy/python_errors.js"></script>
+    <script type="text/javascript" src="../_static/blockpy/ast_node_visitor.js"></script>
+    <script type="text/javascript" src="../_static/blockpy/abstract_interpreter.js"></script>
+    <script type="text/javascript" src="../_static/blockpy/pytifa.js"></script>
+    <script type="text/javascript" src="../_static/blockpy/abstract_interpreter_definitions.js"></script>
+    <script type="text/javascript" src="../_static/blockpy/python_to_blockly.js"></script>
+    <script type="text/javascript" src="../_static/blockpy/imported.js"></script>
+    <script type="text/javascript" src="../_static/blockpy/blocks/class.js"></script>
+    <script type="text/javascript" src="../_static/blockpy/blocks/comment.js"></script>
+    <script type="text/javascript" src="../_static/blockpy/blocks/comprehensions.js"></script>
+    <script type="text/javascript" src="../_static/blockpy/blocks/dict.js"></script>
+    <script type="text/javascript" src="../_static/blockpy/blocks/if.js"></script>
+    <script type="text/javascript" src="../_static/blockpy/blocks/io.js"></script>
+    <script type="text/javascript" src="../_static/blockpy/blocks/lists.js"></script>
+    <script type="text/javascript" src="../_static/blockpy/blocks/sets.js"></script>
+    <script type="text/javascript" src="../_static/blockpy/blocks/loops.js"></script>
+    <script type="text/javascript" src="../_static/blockpy/blocks/parking.js"></script>
+    <script type="text/javascript" src="../_static/blockpy/blocks/tuple.js"></script>
+    <script type="text/javascript" src="../_static/blockpy/blocks/turtles.js"></script>
+    <script type="text/javascript" src="../_static/blockpy/blocks/text.js"></script>
+    <script type="text/javascript" src="../_static/blockpy-modal.js"></script>
+    <script type="text/javascript" src="../_static/simanim.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/pyodide/v0.16.1/full/pyodide.js"></script>
+    <script type="text/javascript" src="../_static/pycode.js"></script>
+    <script type="text/javascript" src="//toolness.github.io/p5.js-widget/p5-widget.js"></script>
+    <script type="text/javascript" src="../_static/p5js.js"></script>
+    <script type="text/javascript" src="../_static/gallery.js"></script>
+    <script type="text/javascript" src="../_static/dbDirective.js"></script>
+    <script type="text/javascript" src="../_static/sql.js"></script>
+    <script type="text/javascript" src="../_static/associations.js"></script>
+    <script type="text/javascript" src="../_static/associations-i18n.en.js"></script>
+    <script type="text/javascript" src="../_static/associations-i18n.sr-Cyrl.js"></script>
+    <script type="text/javascript" src="../_static/regex-check.js"></script>
+    <script type="text/javascript" src="../_static/regex-check-i18n.en.js"></script>
+    <script type="text/javascript" src="../_static/regex-check-i18n.sr-Cyrl.js"></script>
+    <script type="text/javascript" src="../_static/translations.js"></script>
+    <script async="async" type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/latest.js?config=TeX-AMS-MML_HTMLorMML"></script>
+    <script type="text/javascript" src="../_static/jquery-ui-1.10.3.custom.min.js"></script>
+    <script type="text/javascript" src="../_static/jquery-fix.js"></script>
+    <script type="text/javascript" src="../_static/bootstrap-4.0.0-dist/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="../_static/bootstrap-4.0.0-dist/js/bootstrap.bundle.min.js"></script>
+    <script type="text/javascript" src="../_static/bootstrap-sphinx.js"></script>
+    <script type="text/javascript" src="../_static/waypoints.min.js"></script>
+    <script type="text/javascript" src="../_static/rangy-core.js"></script>
+    <script type="text/javascript" src="../_static/rangy-textrange.js"></script>
+    <script type="text/javascript" src="../_static/rangy-cssclassapplier.js"></script>
+    <script type="text/javascript" src="../_static/user-highlights.js"></script>
+    <script type="text/javascript" src="../_static/jquery.idle-timer.js"></script>
+    <script type="text/javascript" src="../_static/processing-1.4.1.min.js"></script>
+    <script type="text/javascript" src="../_static/jquery.hotkey.js"></script>
+    <script type="text/javascript" src="../_static/jquery-migrate-1.2.1.min.js"></script>
+    <script type="text/javascript" src="../_static/course-errors.js"></script>
+    <script type="text/javascript" src="../_static/petlja.js"></script>
+    <script type="text/javascript" src="../_static/require.js"></script>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge,chrome=1'>
+    <meta content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0' name='viewport' />
+    <link rel="shortcut icon" href="../_static/favicon.ico" type="image/ico" />
+    <script type="text/javascript">
+      eBookConfig = {};
+      eBookConfig.host = 'http://127.0.0.1:8000' ? 'http://127.0.0.1:8000' : 'http://127.0.0.1:8000';
+      eBookConfig.app = eBookConfig.host + '/runestone';
+      eBookConfig.ajaxURL = eBookConfig.app + '/ajax/';
+      eBookConfig.course = 'gim4_primene_racunarstva';
+      eBookConfig.logLevel = '0';
+      eBookConfig.loginRequired = 'false';
+      eBookConfig.build_info = "";
+      eBookConfig.isLoggedIn = false;
+      eBookConfig.useRunestoneServices = false;
+      eBookConfig.python3 = true;
+      eBookConfig.basecourse = 'gim4_primene_racunarstva';
+      eBookConfig.runestone_version = '';
+      eBookConfig.imagesDir = '../_images/';
+      eBookConfig.staticDir = '../_static/';
+      if (typeof (Sk) != "undefined")
+        Sk.imgPath = eBookConfig.imagesDir;
+    </script>
+
+  </head>
+
+  <body>
+
+
+
+<div id="navbar" class="content-header">
+  <div class="right-side-nav">
+    
+</div>
+
+<div class="left-side-nav">
+  <div class="course-logo-nav">
+      <a target="_blank" href="https://petlja.org">
+          <img src="../_static/img/petlja-logo-wt.svg" alt="petlja.org" id="lightPetljaLogo">
+      </a>
+  </div>
+  <div class="course-logo-nav-kabinet">
+      <a target="_blank" href="https://petlja.org/net.kabinet">
+          <img src="../_static/img/netkabinet-logo-strelica-wt.svg" alt="petlja.org" id="lightNetKabinetLogo">
+      </a>
+  </div>
+</div>
+
+
+<div class="content-header-label" id = "content-header-label" href="../">Примене савременог рачунарства</div>
+
+</div>
+
+
+
+
+<div class="petljaCourseContainer">
+
+<div class="petljaCourseContent">
+  
+           <div class="tableOfContent">
+            <h5> Садржај </h5>
+            </div>
+           <div>
+                <div class="courseContentsSection">
+                <div class="lecture-div courseContentsSectionHeadline" id=lecture-0_uvod>
+                    <h5>Увод</h5>
+                    <i class="fas fa-angle-down caret-position "> </i>
+                    <i class="fas fa-angle-up caret-position d-none"></i>
+                </div>
+                <div class="courseContentsSubSection d-none"><a href=../0_uvod/uvod.html><div class="studioLecture" id=activity-uvod><i class="fas fa-file-alt activity-icon"></i>Увод</div></a>
+                </div>
+            </div>
+                
+                <div class="courseContentsSection">
+                <div class="lecture-div courseContentsSectionHeadline" id=lecture-1_IOT>
+                    <h5>Интернет ствари и паметни градови</h5>
+                    <i class="fas fa-angle-down caret-position "> </i>
+                    <i class="fas fa-angle-up caret-position d-none"></i>
+                </div>
+                <div class="courseContentsSubSection d-none"><a href=../1_IOT/a_IOT.html><div class="studioLecture" id=activity-a_IOT><i class="fas fa-file-alt activity-icon"></i>Интернет ствари</div></a>
+                <a href=../1_IOT/b_IOT_primene.html><div class="studioLecture" id=activity-b_IOT_primene><i class="fas fa-file-alt activity-icon"></i>Примене интернета ствари</div></a>
+                <a href=../1_IOT/c_pametni_gradovi.html><div class="studioLecture" id=activity-c_pametni_gradovi><i class="fas fa-file-alt activity-icon"></i>Паметни градови</div></a>
+                <a href=../1_IOT/d_IOT_quiz.html><div class="studioLecture" id=activity-d_IOT_quiz><i class="far fa-question-circle activity-icon"></i>Интернет ствари и паметни градови - квиз</div></a>
+                </div>
+            </div>
+                
+                <div class="courseContentsSection">
+                <div class="lecture-div courseContentsSectionHeadline" id=lecture-2_vestacka_inteligencija>
+                    <h5>Вештачка интелигенција</h5>
+                    <i class="fas fa-angle-down caret-position "> </i>
+                    <i class="fas fa-angle-up caret-position d-none"></i>
+                </div>
+                <div class="courseContentsSubSection d-none"><a href=../2_vestacka_inteligencija/a_ai_uvod.html><div class="studioLecture" id=activity-a_ai_uvod><i class="fas fa-file-alt activity-icon"></i>Увод</div></a>
+                <a href=../2_vestacka_inteligencija/b_ai_pojam.html><div class="studioLecture" id=activity-b_ai_pojam><i class="fas fa-file-alt activity-icon"></i>Шта је вештачка интелигенција</div></a>
+                <a href=../2_vestacka_inteligencija/c_ai_vidovi.html><div class="studioLecture" id=activity-c_ai_vidovi><i class="fas fa-file-alt activity-icon"></i>Видови вештачке интелигенције</div></a>
+                <a href=../2_vestacka_inteligencija/d_ai_ciljevi.html><div class="studioLecture" id=activity-d_ai_ciljevi><i class="fas fa-file-alt activity-icon"></i>Циљеви вештачке интелигенције</div></a>
+                <a href=../2_vestacka_inteligencija/e_ai_rizici_i_dileme.html><div class="studioLecture" id=activity-e_ai_rizici_i_dileme><i class="fas fa-file-alt activity-icon"></i>Ризици и дилеме</div></a>
+                <a href=../2_vestacka_inteligencija/f_vestacka_inteligencija_quiz.html><div class="studioLecture" id=activity-f_vestacka_inteligencija_quiz><i class="far fa-question-circle activity-icon"></i>Вештачка интелигенција - квиз</div></a>
+                </div>
+            </div>
+                
+                <div class="courseContentsSection">
+                <div class="lecture-div courseContentsSectionHeadline" id=lecture-3_masinsko_ucenje>
+                    <h5>Мaшинско учење</h5>
+                    <i class="fas fa-angle-down caret-position "> </i>
+                    <i class="fas fa-angle-up caret-position d-none"></i>
+                </div>
+                <div class="courseContentsSubSection d-none"><a href=../3_masinsko_ucenje/a_ml_pojam.html><div class="studioLecture" id=activity-a_ml_pojam><i class="fas fa-file-alt activity-icon"></i>Шта је машинско учење</div></a>
+                <a href=../3_masinsko_ucenje/b_ml_vidovi.html><div class="studioLecture" id=activity-b_ml_vidovi><i class="fas fa-file-alt activity-icon"></i>Видови машинског учења</div></a>
+                <a href=../3_masinsko_ucenje/c_masinsko_ucenje_quiz.html><div class="studioLecture" id=activity-c_masinsko_ucenje_quiz><i class="far fa-question-circle activity-icon"></i>Мaшинско учење - квиз</div></a>
+                </div>
+            </div>
+                
+                <div class="courseContentsSection">
+                <div class="lecture-div courseContentsSectionHeadline" id=lecture-4_big_data>
+                    <h5>Обрада великих количина података</h5>
+                    <i class="fas fa-angle-down caret-position "> </i>
+                    <i class="fas fa-angle-up caret-position d-none"></i>
+                </div>
+                <div class="courseContentsSubSection d-none"><a href=../4_big_data/a_analiza_podataka.html><div class="studioLecture" id=activity-a_analiza_podataka><i class="fas fa-file-alt activity-icon"></i>Доношење одлука на основу података</div></a>
+                <a href=../4_big_data/b_big_data.html><div class="studioLecture" id=activity-b_big_data><i class="fas fa-file-alt activity-icon"></i>Велике количине података</div></a>
+                <a href=../4_big_data/c_tehnologija.html><div class="studioLecture" id=activity-c_tehnologija><i class="fas fa-file-alt activity-icon"></i>Технологије иза великих количина података</div></a>
+                <a href=../4_big_data/d_nauka_o_podacima.html><div class="studioLecture" id=activity-d_nauka_o_podacima><i class="fas fa-file-alt activity-icon"></i>Анализа података и наука о подацима</div></a>
+                <a href=../4_big_data/e_primene.html><div class="studioLecture" id=activity-e_primene><i class="fas fa-file-alt activity-icon"></i>Примене науке о подацима</div></a>
+                <a href=../4_big_data/f_big_data_quiz.html><div class="studioLecture" id=activity-f_big_data_quiz><i class="far fa-question-circle activity-icon"></i>Обрада великих количина података - квиз</div></a>
+                </div>
+            </div>
+                
+                <div class="courseContentsSection">
+                <div class="lecture-div courseContentsSectionHeadline" id=lecture-5_robotika>
+                    <h5>Роботика</h5>
+                    <i class="fas fa-angle-down caret-position "> </i>
+                    <i class="fas fa-angle-up caret-position d-none"></i>
+                </div>
+                <div class="courseContentsSubSection d-none"><a href=../5_robotika/a_robotika_uvod.html><div class="studioLecture" id=activity-a_robotika_uvod><i class="fas fa-file-alt activity-icon"></i>Увод</div></a>
+                <a href=../5_robotika/b_robot_osobine_delovi.html><div class="studioLecture" id=activity-b_robot_osobine_delovi><i class="fas fa-file-alt activity-icon"></i>Шта је робот</div></a>
+                <a href=../5_robotika/c_robotika_primene.html><div class="studioLecture" id=activity-c_robotika_primene><i class="fas fa-file-alt activity-icon"></i>Неке примене робота</div></a>
+                <a href=../5_robotika/d_robotika_quiz.html><div class="studioLecture" id=activity-d_robotika_quiz><i class="far fa-question-circle activity-icon"></i>Роботика - квиз</div></a>
+                </div>
+            </div>
+                
+                <div class="courseContentsSection">
+                <div class="lecture-div courseContentsSectionHeadline" id=lecture-6_kriptografija>
+                    <h5>Криптографија</h5>
+                    <i class="fas fa-angle-down caret-position "> </i>
+                    <i class="fas fa-angle-up caret-position d-none"></i>
+                </div>
+                <div class="courseContentsSubSection d-none"><a href=../6_kriptografija/a_kriptografija_osnovno.html><div class="studioLecture" id=activity-a_kriptografija_osnovno><i class="fas fa-file-alt activity-icon"></i>Основни појмови</div></a>
+                <a href=../6_kriptografija/b_javni_kljuc.html><div class="studioLecture" id=activity-b_javni_kljuc><i class="fas fa-file-alt activity-icon"></i>Криптовање помоћу јавног кључа</div></a>
+                <a href=../6_kriptografija/c_rsa.html><div class="studioLecture" id=activity-c_rsa><i class="fas fa-file-alt activity-icon"></i>Алгоритам RSA</div></a>
+                <a href=../6_kriptografija/d_zadaci_danas.html><div class="studioLecture" id=activity-d_zadaci_danas><i class="fas fa-file-alt activity-icon"></i>Задаци модерне криптографије</div></a>
+                <a href=../6_kriptografija/e_hesiranje.html><div class="studioLecture" id=activity-e_hesiranje><i class="fas fa-file-alt activity-icon"></i>Kриптографијa и хеширање</div></a>
+                <a href=../6_kriptografija/f_kriptografija_quiz.html><div class="studioLecture" id=activity-f_kriptografija_quiz><i class="far fa-question-circle activity-icon"></i>Криптографија - квиз</div></a>
+                </div>
+            </div>
+                
+                <div class="courseContentsSection">
+                <div class="lecture-div courseContentsSectionHeadline" id=lecture-7_kvantni_racunari>
+                    <h5>Квантни рачунари</h5>
+                    <i class="fas fa-angle-down caret-position "> </i>
+                    <i class="fas fa-angle-up caret-position d-none"></i>
+                </div>
+                <div class="courseContentsSubSection d-none"><a href=../7_kvantni_racunari/a_kvantni_rac_uvod.html><div class="studioLecture" id=activity-a_kvantni_rac_uvod><i class="fas fa-file-alt activity-icon"></i>Квантни рачунари</div></a>
+                <a href=../7_kvantni_racunari/b_kvantni_rac_principi.html><div class="studioLecture" id=activity-b_kvantni_rac_principi><i class="fas fa-file-alt activity-icon"></i>Основни принципи рада квантних рачунара</div></a>
+                <a href=../7_kvantni_racunari/c_kvantni_rac_primene.html><div class="studioLecture" id=activity-c_kvantni_rac_primene><i class="fas fa-file-alt activity-icon"></i>Могуће примене квантних рачунара</div></a>
+                <a href=../7_kvantni_racunari/d_kvantni_rac_proizvodnja.html><div class="studioLecture" id=activity-d_kvantni_rac_proizvodnja><i class="fas fa-file-alt activity-icon"></i>Производња квантних рачунара</div></a>
+                <a href=../7_kvantni_racunari/e_kvantni_racunari_quiz.html><div class="studioLecture" id=activity-e_kvantni_racunari_quiz><i class="far fa-question-circle activity-icon"></i>Квантни рачунари - квиз</div></a>
+                </div>
+            </div>
+                
+                <div class="courseContentsSection">
+                <div class="lecture-div courseContentsSectionHeadline" id=lecture-8_zakljucak>
+                    <h5>Закључак</h5>
+                    <i class="fas fa-angle-down caret-position "> </i>
+                    <i class="fas fa-angle-up caret-position d-none"></i>
+                </div>
+                <div class="courseContentsSubSection d-none"><a href=../8_zakljucak/zakljucak.html><div class="studioLecture" id=activity-zakljucak><i class="fas fa-file-alt activity-icon"></i>Закључак</div></a>
+                </div>
+            </div>
+                </div>
+</div>
+
+
+
+<div class="lectureContent">
+
+  <div id="errors">
+  </div>
+  
+  <div class="lectureContentMaterial">
+  
+    <div id="main-content">
+    
+  <div class="section" id="id1">
+<h1>Видови вештачке интелигенције<a class="headerlink" href="#id1" title="Permalink to this headline">¶</a></h1>
+<div class="section" id="id2">
+<h2>Решавање проблема засновано на претрази<a class="headerlink" href="#id2" title="Permalink to this headline">¶</a></h2>
+<p>Многи проблеми могу да се моделирају помоћу графова или дрвета. Такав је, на пример, проблем проналажења
+пута од једног до другог датог града. При томе може да се тражи пут који је по неком критеријуму
+оптималан (нпр. најкраћи пут, пут који захтева најмање времена, или најмање горива, или пут са најмање
+буке и слично). У овом проблему чворови су градови, а гране путеви између градова. При томе су гранама
+додељене тежине, које могу да представљају дужине путева, потребно време или неку другу величину коју
+треба минимизирати на укупном путу.</p>
+<div class="figure align-center" id="id6">
+<img alt="../_images/najkraci_put.png" src="../_images/najkraci_put.png" />
+<p class="caption"><span class="caption-text">Проблем налажења пута са најмањим збиром тежина грана</span><a class="headerlink" href="#id6" title="Permalink to this image">¶</a></p>
+</div>
+
+        <div class="course-box course-box-question course-content">
+        <div data-component="fillintheblank" id="ai_najkraci_put">
+            <p>Који је најмањи збир тежина на путу од стартног до циљног чвора?</p>
+<p>Одговор (уписати цифрама): <input type="text"></p>
+
+        <script type="application/json">
+            [[{"regex": "^ *^\\s*9\\s*$ *$", "regexFlags": "", "feedback": "<p>\u0422\u0430\u0447\u043d\u043e.</p>\n"}, {"regex": "^ *x *$", "regexFlags": "", "feedback": "<p>\u041f\u043e\u043a\u0443\u0448\u0430\u0458 \u043f\u043e\u043d\u043e\u0432\u043e.</p>\n"}]]
+        </script>
+
+        </div>
+        </div>
+            <p>Још један пример употребе графова су потезне игре за једног или више играча. У овом случају, чворови
+графа представљају стања, односно позиције у игри, а гране представљају могуће потезе. Задатак може да
+буде да се пронађе победнички потез, или низ потеза. У случају сложеније игре могу да се поставе и
+додатни захтеви, нпр. да се до победе дође у најмањем броју потеза.</p>
+<div class="figure align-center" id="id7">
+<img alt="../_images/XO.jpg" src="../_images/XO.jpg" />
+<p class="caption"><span class="caption-text">Проблем налажења победничких потеза (означених љубичасто)</span><a class="headerlink" href="#id7" title="Permalink to this image">¶</a></p>
+</div>
+<p>Наравно, ово је само пар сликовитих примера, док је број стварних проблема који могу да се представе
+на овај начин заиста огроман.</p>
+<p>У проблемима овог типа решење обично представља одређени избор из датог мноштва могућности, који
+је по установљеном критеријуму оптималан. Један очигледан начин да се дође до решења је да се
+помоћу рачунара испробају све могућности, односно да се дати простор могућности систематично претражи.
+Примери са слика су довољно мали да можемо да их решимо и у мислима, а при томе не морамо да бринемо
+о томе да ли је наш поступак могао да буде и рационалнији (ефикаснији). Са повећањем примера повећава
+се и значај ефикасности у претрази графа.</p>
+<p>У раној фази развоја вештачке интелигенције развијени су и многи алгоритми претраге графова, који су
+данас део стандардног градива на студијама рачунарских наука. Систематичне претраге графова и данас
+представљају важан начин решавања проблема, мада су брзо откривена и нека ограничења овог приступа.
+Испоставило се да чак ни најефикаснији алгоритми комплетне претраге нису довољни за решавање већих
+проблема, због такозване <strong>комбинаторне експлозије</strong>. На пример, у познатом проблему трговачког путника
+потребно је одредити најкраћу путању којом се сваки од <span class="math notranslate nohighlight">\(N\)</span> датих градова обилази по једанпут.
+Број могућих путања једнак је броју могућих редоследа у набрајању градова, односно броју пермутација
+низа од <span class="math notranslate nohighlight">\(N\)</span> елемената, а то је <span class="math notranslate nohighlight">\(N!\)</span> (ен факторијел). Тако, за <span class="math notranslate nohighlight">\(N=5\)</span> градова имамо <span class="math notranslate nohighlight">\(N!=120\)</span>
+могућих редоследа обилажења, док већ за <span class="math notranslate nohighlight">\(N=20\)</span> имамо <span class="math notranslate nohighlight">\(N!=2~432~902~008~176~640~000\)</span>
+могућих редоследа. Број могућих обилазака се повећава огромном брзином, па са умереним повећањем
+броја градова (нпр. неколико десетина или пар стотина), број путања постаје толико велики да их је
+практично немогуће све испитати. Да би се овај проблем превазишао или донекле ублажио, потребно је
+да се у програму искористе неке додатне информације о проблему, што зависи од самог проблема и често
+није једноставно.</p>
+<p>Док се не напомене другачије, у проблемима претраге се подразумева само то да су познати „потези” који
+из текућег стања (чвора у графу) воде у непосредно доступна, суседна стања (суседне чворове), као и да
+се може испитати да ли је неко стање завршно (циљно). Уколико нема додатног знања о природи проблема,
+које може да се искористи за усмеравање претраге ка неком од циљних стања, таква претрага се назива
+<strong>неинформисана прертага</strong> (енгл. uninformed search).
+Насупрот томе, <strong>информисана, или хеуристичка претрага</strong> (енгл. informed search) има на располагању
+и додатна знања, која су специфична и различита за сваки конкретан проблем. Хеуристика (од грчког
+εὑρίσκω, проналазим) је метод за који не постоји гаранција да је оптималан, или да уопште доводи до
+решења, али се искуствено, тј. практично показао као користан. На пример, у шаху не можемо да
+будемо сигурни да је узимање противничке фигуре добар потез, али често јесте. Зато је добра хеуристика
+да се такви потези међу првима детаљније размотре, нарочито за фигуре веће вредности. Људи стално
+користе хеуристике и у обичном животу. На пример, вероватно нећете пити воду ако приметите да има
+одређену боју или мирис, иако је можда безопасна.</p>
+<p>Ако бисмо неинформисану претрагу упоредили са тражењем излаза из непрегледног лавиринта, информисана
+претрага би могла да се замисли као тражење излаза чије GPS координате су познате, при чему имамо и
+компас и уређај који нам јавља наше тренутне координате, али немамо навигацију до циља. Наша хеуристичка
+оцена квалитета тренутног положаја може да се заснива на разлици координата тренутне и циљне позиције.
+Овде нема гаранције да нас смањивање те разлике доводи ближе циљу у смислу пута који је потребно прећи
+кроз ходнике лавиринта, али је много боље од лутања наслепо. У комбинацији са другим техникама,
+хеуристика заснована на координатама (нпр. кретање најпре дуж ходника којим се највише смањује разлика
+координата) често нам (али не увек) помаже да знатно брже нађемо излаз.</p>
+
+    <div data-component="reveal" id="ai_heuristike"   data-showtitle="Још мало о хеуристикама" data-hidetitle="Сакриј текст о хеуристикама">
+    <p><strong>Још мало о хеуристикама</strong> (за оне које интересује више)</p>
+<p>Употреба хеуристика је често довољна за брже достизање циља, или приближног (субоптималног) решења,
+када налажење најбољег решења због величине простора претраге није практично изводљиво систематичном,
+неинформисаном претрагом. У хеуристичким претрагама се често руководимо тзв. образованим нагађањем
+(енгл. educated guess) или неким опште прихваћеним принципом (енгл. rule of thumb). Чест је случај
+и да се формулише и користи нека функција која чворовима у претраживаном графу, тј. стањима у
+решаваном проблему додељује нумеричке вредности. Таква функција се назива <strong>функција оцене стања</strong>
+или <strong>функција оцене позиције</strong> и она се користи за навођење претраге ка циљном стању. Приликом
+решавања разних проблема, уочене су неке заједничке особине различитих хеуристичких приступа, па
+је из тих истраживања настала одређена теорија и развијени су општи хеуристички алгоритми који се
+ослањају на функцију оцене стања која има потребне особине. Типично, хеуристички алгоритми настоје
+да са текућег стања пређу на најбоље суседно стање, тј. суседно стање у коме функција оцене има највећу
+вредност. Такви су, на пример, похлепни алгоритми (енгл. <a class="reference external" href="https://en.wikipedia.org/wiki/Greedy_algorithm">greedy algorithm</a>),
+алгоритми пењања уз брдо (енгл. <a class="reference external" href="https://en.wikipedia.org/wiki/Hill_climbing">hill climbing</a>),
+алгоритми градијентног успона или спуста (енгл. <a class="reference external" href="https://en.wikipedia.org/wiki/Gradient_descent">gradient ascent/descent</a>)
+и други сродни поступци. Типичан проблем ових једноставних похлепних приступа је заглављивање у
+локалном оптимуму који није циљно стање. Зато се похлепан приступ често комбинује са другим поступцима.
+На пример, у неким проблемима је могуће да се започне похлепно напредовање са више места у простору
+претраге, или да се запамте нека перспективна стања која нису први избор у датом тренутку, да би се
+претрага касније вратила на тај део простора. Примери такве, унапређене претраге су алгоритми <em>најпре најбољи</em>
+(енгл. <a class="reference external" href="https://en.wikipedia.org/wiki/Best-first_search">best-first search</a>), A* (а звезда, енгл.
+<a class="reference external" href="https://en.wikipedia.org/wiki/A*_search_algorithm">a star</a>) и претрага снопа (енгл.
+<a class="reference external" href="https://en.wikipedia.org/wiki/Beam_search">beam search</a>).</p>
+
+    </div>
+    <p>Поменимо да се поред неинформисане и информисане претраге често користе и разни облици случајне и
+непотпуне претраге. Познати примери су разни еволуциони алгоритми (нпр. генетски алгоритми, симулирано
+каљење, мравље колоније и други), и Монте Карло претраге у којима алгоритам може да научи да игра
+логичку игру тако што одигра огроман број партија сам против себе и памти потезе који су доводили до
+успеха.</p>
+</div>
+<div class="section" id="id3">
+<h2>Аутоматско резоновање<a class="headerlink" href="#id3" title="Permalink to this headline">¶</a></h2>
+<p>Рани истраживачи ВИ су развили алгоритме који су имитирали размишљање корак по корак, које људи
+користе када решавају логичке проблеме, односно када декуктивно закључују. Ови алгоритми се увелико
+ослањају на радове раније помињаних математичара, логичара и филозофа (у делу о значају формалне
+логике). Једноставан пример формалног
+закључивања је да из претпоставки <span class="math notranslate nohighlight">\(\neg P \implies A, P \implies B\)</span> може да се изведе (дедукује)
+закључак <span class="math notranslate nohighlight">\(A \lor B\)</span>. Ово није тешко потврдити знајући да <span class="math notranslate nohighlight">\(P\)</span> мора да буде или тачно или
+нетачно. Рачунарски програми који су у стању да поред осталог изводе овакве закључке и комбинују их,
+успешно су употребљени у разним областима, као што су:</p>
+<ul class="simple">
+<li><p>доказивањe математичких теорема,</p></li>
+<li><p>доказивањe да одређени рачунарски програми раде управо оно што се од њих очекује, тј. да немају
+логичких грешака. То је посебно важно када су грешке веома скупе или могу да изазову катастрофе
+(пример париског метроа без возача, у коме возовима управљају алгоритми, верификовани формалним
+резоновањем)</p></li>
+<li><p>у изградњи експертских система (нпр. системи који на основу медицинских симптома дају дијагнозу),</p></li>
+<li><p>у проблемима распоређивања (као што је прављење распореда часова, или распореда такмичења),</p></li>
+<li><p>у проблемима задовољивости ограничења (енгл. satisfiability problem, скр. SAT), у којима је потребно
+наћи вредности логичких променљивих, за које је дата логичка формула тачна</p></li>
+</ul>
+<p>и другим. Концепт аутоматског закључивања лако може да се потврди на релативно једноставним логичким
+проблемима, какви се често задају као вежба размишљања. Ево једног сасвим једноставног задатка те врсте:</p>
+<div class="topic">
+<p class="topic-title"></p>
+<p>Три пријатеља, Петровић, Марковић и Јовановић, живе у три различита града: Ваљеву, Јагодини и Нишу.
+О њима знамо следеће:</p>
+<div class="line-block">
+<div class="line">1) Тројица пријатеља су се прошле године дружили у Нишу.</div>
+<div class="line">2) Марковић већ две године није напуштао свој град.</div>
+<div class="line">3) Нико од њих тројице не живи у граду чији назив почиње на исто слово као његово презиме.</div>
+</div>
+
+<div class="course-box course-box-problem course-content">
+<ul data-component="dragndrop" id="dragndrop_sample_question12_image">
+    <span data-component="question">Q-9: Спојите превлачењем презиме сваког од тројице пријатеља са градом у коме живи.</span>
+	
+
+    <li data-component="draggable" id="dragndrop_sample_question12_image_drag1">Марковић </li>
+    <li data-component="dropzone" for="dragndrop_sample_question12_image_drag1"> Ниш</li>
+
+    <li data-component="draggable" id="dragndrop_sample_question12_image_drag2">Јовановић </li>
+    <li data-component="dropzone" for="dragndrop_sample_question12_image_drag2"> Ваљево</li>
+
+    <li data-component="draggable" id="dragndrop_sample_question12_image_drag3">Петровић </li>
+    <li data-component="dropzone" for="dragndrop_sample_question12_image_drag3"> Јагодина</li>
+</ul></div></div>
+<p>Знатно сложенији, а вероватно и најпознатији такав задатак је <a class="reference external" href="https://en.wikipedia.org/wiki/Zebra_Puzzle">проблем зебре</a>.</p>
+<p>Типичан начин да једноставан систем формалног закључивања реши овакав проблем је да за сваку комбинацију
+вредности редом провери да ли су све дате везе задовољене, а ону комбинацију код које важе све дате везе
+проглашава за решење.</p>
+<p>Након потврђивања концепта на једноставним примерима, могло би се очекивати да описани приступ може
+са истим успехом да буде примењен и на реалне, веће проблеме. Међутим, и овде врло брзо долази до
+комбинаторне експлозије, јер са повећавањем броја података веома нагло расте број комбинација које
+треба проверити. Слично је и код приступа дедуктивног извођења закључака, јер се са повећавањем броја
+претпоставки (премиса) веома нагло повећава број закључака који могу да се изведу. Због тога су проблеми
+аутоматског резоновања тесно повезани са претходно описаним проблемима претраге. Наиме, и овде је
+потребно да се на неки начин одлучује које правило извођења и када треба применити на одређене
+претпоставке, да би се (што једноставније) добио жељени закључак. У томе поново велику улогу могу
+да имају хеуристике које усмеравају претрагу у простору датих и изведених чињеница.</p>
+<p>Посебна врста проблема је <strong>закључивање из несигурних или непотпуних информација</strong>. До краја осамдесетих
+и током деведесетих година, истраживање ВИ је довело до развоја метода за решавање оваквих проблема,
+користећи концепте из вероватноће, статистике и економије. Ове методе обухватају одређивање степена
+поузданости закључака изведених из несигурних информација, односно поступке извођења што поузданијих
+закључака под овим околностима. На пример, експертски систем за одређивање дијагнозе пацијената би
+могао да уз дијагнозу саопшти и вероватноћу исправности те дијагнозе, односно степен своје поузданости
+у изведени закључак.</p>
+</div>
+<div class="section" id="id5">
+<h2>Вештачка интелигенција заснована на статистици<a class="headerlink" href="#id5" title="Permalink to this headline">¶</a></h2>
+<p>Последњих година смо сведоци великих успеха вештачке интелигенције у многим областима, од којих смо
+неке већ помињали на почетку. Познати примери су аутоматско превођење, аутоматско управљање возилима,
+рачунарски вид, у који спада препознавање садржаја слике или видеа, односно разумевање (семантичка
+анализа) њиховог садржаја, итд. Приступ који је довео до ових успеха се по много чему разликује од
+претходног.</p>
+<p>Претходно описани видови ВИ, у којима се проблеми решавају претрагом графова и формалним резоновањем,
+типични су за почетни период развоја вештачке интелигенције (до деведесетих година двадесетог века).
+Карактеристично за ове видове вештачке интелигенције је да су и проблем и алгоритам решавања описани
+експлицитно, а да су и математички модел (формални опис) проблема и решење (алгоритам) тесно повезани
+са конкретним проблемом. Да би дошли до што успешнијих решења, истраживачи често теже да искористе што
+више специфичности датог проблема за изградњу хеуристика, па се због тога овај приступ по правилу
+тешко уопштава и преноси на решавање других проблема. Ова методологија је позната под називом симболичка
+вештачка интелигенција, јер се за опис и анализу проблема обично користи симболика високог нивоа, тј.
+формуле.</p>
+<p>Насупрот томе, новији системи, који чине такозвани други талас вештачке интелигенције, засновани
+су на статистици и индуктивном закључивању. За овакве системе се не формулишу експлицитни процеси
+решавања појединачних примерака проблема. Уместо тога, закључци се типично изводе из огромног броја
+примера, кроз процес који називамо <strong>машинско учење</strong>. Системи који користе машинско учење обично
+нису у стању да образложе закључке, односно решења до којих су дошли, јер ти закључци нису изведени
+дедуктивно (типично образложење које би они могли да понуде је проценат у одређеном смислу сличних
+примера које су претходно видели, а код којих је управо овај одговор био исправан). Оваквим системима
+је својствено да могу да погреше у било ком конкретном случају, али су статистички врло успешни на
+великом броју примера које решавају, а временом постају и све успешнији. Према томе, код оваквих
+система ВИ, статистика се појављује као главно средство како за њихово креирање, тако и за и оцену
+њихове успешности.</p>
+<p>О системима ВИ заснованим на статистици и машинском учењу биће више речи у посебном одељку овог курса.</p>
+</div>
+</div>
+
+
+    </div>
+    
+    <div>
+<div class="lecture-prev-next-toggle">
+  <a  href="b_ai_pojam.html" id="prevLectureLink" class="lecture-toggler-arrows"><i class="fas fa-arrow-left fa"></i> <span> Претходна лекција </span> </a>
+  
+  <a id="nextLectureLink" class="lecture-toggler-arrows"><span> Следећа лекција</span>  <i class="fas fa-arrow-right fa"></i> </a>
+</div>
+
+<script type="text/javascript">
+  $('#relations-prev').tooltip({'placement':'right', 'selector': '', 'delay': { show: 100, hide: 50}});
+  $('#relations-next').tooltip({'placement':'left', 'selector': '', 'delay': { show: 100, hide: 50}});
+</script>
+</div>
+
+    
+  </div>
+</div>
+
+<div class="petljadoc-resources">
+  <span class="pull-left">(Created using  <a href="https://pypi.org/project/Sphinx/">Swinx</a>, <a href="http://runestoneinteractive.org/">RunestoneComponents</a> and <a href="https://github.com/Petlja/PetljaDoc">PetljaDoc</a>) <br> © 2022 Petlja</span>
+</div>
+
+
+<div class="lectureToolbox">
+
+  <label class="font-size-toggle" id="fontSizeToggle">
+
+      <i class="fas fa-font"></i><label>Слова</label>
+  </label>
+  <div class="font-change d-none" id="fontChangeModal">
+      <span class="dec-letter-icon" id="decLetterIcon">A-</span>
+      <label id="currentFontSize">16</label>
+      <span class="inc-letter-icon" id="incLetterIcon">A+</span>
+  </div>
+</div>
+
+</div>
+
+  </body>
+</html>
