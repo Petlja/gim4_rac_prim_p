@@ -1,12 +1,13 @@
 Производња квантних рачунара
 ============================
 
-Квантни рачунар може да се направи на више начина. Међу технологијама које се истражују су 
-заробљени јони `(trapped ions) <https://en.wikipedia.org/wiki/Trapped_ion_quantum_computer>`_, 
-силицијумске квантне тачке `(silicon quantum dots) <https://en.wikipedia.org/wiki/Quantum_dot>`_, 
-тополошки квантни рачунар `(topological quantum computer) <https://en.wikipedia.org/wiki/Topological_quantum_computer>`_,
-интегрисана квантна фотоника `(Integrated quantum photonics) <https://en.wikipedia.org/wiki/Integrated_quantum_photonics>`_ 
-и други. Сви ови приступи имају неке предности и мане. Тренутно су најзаступљенији 
+Квантни рачунар може да се направи на више начина. Међу технологијама које се истражују су и: 
+- заробљени јони `(trapped ions) <https://en.wikipedia.org/wiki/Trapped_ion_quantum_computer>`_, 
+- силицијумске квантне тачке `(silicon quantum dots) <https://en.wikipedia.org/wiki/Quantum_dot>`_, 
+- тополошки квантни рачунар `(topological quantum computer) <https://en.wikipedia.org/wiki/Topological_quantum_computer>`_,
+- интегрисана квантна фотоника `(Integrated quantum photonics) <https://en.wikipedia.org/wiki/Integrated_quantum_photonics>`_ 
+ 
+Сви ови приступи имају неке предности и мане. Тренутно су најзаступљенији 
 рачунари који су засновани на логичким елементима који користе суперпроводљива електронска кола. Они раде 
 на сличан начин као класични рачунари и надовезују се на постојећу индустрију полупроводника. Главни 
 изазов у градњи оваквих квантних рачунара је повећање тренутно малог броја кубита који је данас могућ, 

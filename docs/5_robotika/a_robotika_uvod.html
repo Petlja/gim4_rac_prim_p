@@ -6,6 +6,7 @@
     <title>Роботика - увод</title>
     <link rel="stylesheet" type="text/css" href="../_static/activecode.css" />
     <link rel="stylesheet" type="text/css" href="../_static/codemirror.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/qchoice.css" />
     <link rel="stylesheet" type="text/css" href="../_static/clickable.css" />
     <link rel="stylesheet" type="text/css" href="../_static/pytutor.css" />
     <link rel="stylesheet" type="text/css" href="../_static/modal-basic.css" />
@@ -24,13 +25,9 @@
     <link rel="stylesheet" type="text/css" href="../_static/webglinteractive.css" />
     <link rel="stylesheet" type="text/css" href="../_static/karel.css" />
     <link rel="stylesheet" type="text/css" href="../_static/notes.css" />
-    <link rel="stylesheet" type="text/css" href="../_static/simanim.css" />
-    <link rel="stylesheet" type="text/css" href="../_static/pycode.css" />
-    <link rel="stylesheet" type="text/css" href="../_static/p5js.css" />
     <link rel="stylesheet" type="text/css" href="../_static/gallery.css" />
-    <link rel="stylesheet" type="text/css" href="../_static/dbDirective.css" />
     <link rel="stylesheet" type="text/css" href="../_static/associations.css" />
-    <link rel="stylesheet" type="text/css" href="../_static/regex-check.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/editor.css" />
     <link rel="stylesheet" href="../_static/basic.css" type="text/css" />
     <link rel="stylesheet" href="../_static/user-highlights.css" type="text/css" />
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.1/css/all.css" type="text/css" />
@@ -112,6 +109,7 @@
     <script type="text/javascript" src="../_static/karelCorner.js"></script>
     <script type="text/javascript" src="../_static/karelRobot.js"></script>
     <script type="text/javascript" src="../_static/karelWorld.js"></script>
+    <script type="text/javascript" src="../_static/karelChat.js"></script>
     <script type="text/javascript" src="../_static/karelRobotDrawer.js"></script>
     <script type="text/javascript" src="../_static/karelUI.js"></script>
     <script type="text/javascript" src="../_static/karel.js"></script>
@@ -119,46 +117,14 @@
     <script type="text/javascript" src="../_static/karel-i18n.sr-Cyrl.js"></script>
     <script type="text/javascript" src="../_static/notes.js"></script>
     <script type="text/javascript" src="../_static/pygamelib-init.js"></script>
-    <script type="text/javascript" src="../_static/blockly/blockly_compressed.js"></script>
-    <script type="text/javascript" src="../_static/blockly/blocks_compressed.js"></script>
-    <script type="text/javascript" src="../_static/blockly/python_compressed.js"></script>
-    <script type="text/javascript" src="../_static/blockly/msg-sr.js"></script>
-    <script type="text/javascript" src="../_static/blockpy/utilities.js"></script>
-    <script type="text/javascript" src="../_static/blockpy/python_errors.js"></script>
-    <script type="text/javascript" src="../_static/blockpy/ast_node_visitor.js"></script>
-    <script type="text/javascript" src="../_static/blockpy/abstract_interpreter.js"></script>
-    <script type="text/javascript" src="../_static/blockpy/pytifa.js"></script>
-    <script type="text/javascript" src="../_static/blockpy/abstract_interpreter_definitions.js"></script>
-    <script type="text/javascript" src="../_static/blockpy/python_to_blockly.js"></script>
-    <script type="text/javascript" src="../_static/blockpy/imported.js"></script>
-    <script type="text/javascript" src="../_static/blockpy/blocks/class.js"></script>
-    <script type="text/javascript" src="../_static/blockpy/blocks/comment.js"></script>
-    <script type="text/javascript" src="../_static/blockpy/blocks/comprehensions.js"></script>
-    <script type="text/javascript" src="../_static/blockpy/blocks/dict.js"></script>
-    <script type="text/javascript" src="../_static/blockpy/blocks/if.js"></script>
-    <script type="text/javascript" src="../_static/blockpy/blocks/io.js"></script>
-    <script type="text/javascript" src="../_static/blockpy/blocks/lists.js"></script>
-    <script type="text/javascript" src="../_static/blockpy/blocks/sets.js"></script>
-    <script type="text/javascript" src="../_static/blockpy/blocks/loops.js"></script>
-    <script type="text/javascript" src="../_static/blockpy/blocks/parking.js"></script>
-    <script type="text/javascript" src="../_static/blockpy/blocks/tuple.js"></script>
-    <script type="text/javascript" src="../_static/blockpy/blocks/turtles.js"></script>
-    <script type="text/javascript" src="../_static/blockpy/blocks/text.js"></script>
-    <script type="text/javascript" src="../_static/blockpy-modal.js"></script>
-    <script type="text/javascript" src="../_static/simanim.js"></script>
-    <script type="text/javascript" src="https://cdn.jsdelivr.net/pyodide/v0.16.1/full/pyodide.js"></script>
-    <script type="text/javascript" src="../_static/pycode.js"></script>
-    <script type="text/javascript" src="//toolness.github.io/p5.js-widget/p5-widget.js"></script>
-    <script type="text/javascript" src="../_static/p5js.js"></script>
     <script type="text/javascript" src="../_static/gallery.js"></script>
-    <script type="text/javascript" src="../_static/dbDirective.js"></script>
-    <script type="text/javascript" src="../_static/sql.js"></script>
     <script type="text/javascript" src="../_static/associations.js"></script>
     <script type="text/javascript" src="../_static/associations-i18n.en.js"></script>
     <script type="text/javascript" src="../_static/associations-i18n.sr-Cyrl.js"></script>
-    <script type="text/javascript" src="../_static/regex-check.js"></script>
-    <script type="text/javascript" src="../_static/regex-check-i18n.en.js"></script>
-    <script type="text/javascript" src="../_static/regex-check-i18n.sr-Cyrl.js"></script>
+    <script type="text/javascript" src="../_static/editor.js"></script>
+    <script type="text/javascript" src="../_static/jszip.js"></script>
+    <script type="text/javascript" src="../_static/editor-i18n.en.js"></script>
+    <script type="text/javascript" src="../_static/editor-i18n.sr-Cyrl.js"></script>
     <script type="text/javascript" src="../_static/translations.js"></script>
     <script async="async" type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/latest.js?config=TeX-AMS-MML_HTMLorMML"></script>
     <script type="text/javascript" src="../_static/jquery-ui-1.10.3.custom.min.js"></script>
@@ -377,39 +343,49 @@
 <p>Већ на основу саме речи роботика, јасно је да је централни појам ове области робот. Зато је природно
 да роботику и дефинишемо посредно, ослањајући се на појам робота.</p>
 
-    <div class="course-box course-box-info">
+    <div class="note-wrapper infonote-type">
+        <div class="note-icon-holder"> </div>
+        <img src="../_static/img/infonote-img.svg" class="note-image infonote-image" /> 
         <div class="course-content">
-            <p>
+            
 <p><strong>Роботика</strong> је инжењерска дисциплина која се бави дизајном, конструкцијом и радом робота.</p>
 
-    </p></div></div>
+    </div></div>
 <p>Добро, али <strong>шта је робот</strong>? Одговором на то питање бавићемо се у наставку. Кренимо од основних
 карактеристика робота, помоћу којих ћемо бити у стању да нешто прецизније одредимо шта може да
 се сматра роботом, а шта не. Како ви разумете реч робот? Одговорите на следећа питања у складу са
 својим разумевањем ове речи. Ако сте у прилици, размените аргументе са неким ко је дао другачије
 одговоре.</p>
 
-            <div class="course-box course-box-question course-content">
+            <div class="course-box course-box-question course-content petlja-problem-box choice-question">
+                <div class="image-background"></div>
+                <div class="petlja-problem-box-icon-holder"> </div>
+                <img src="../_static/img/qchoice-img.svg" class="petlja-problem-image  qchoice-image" />
+                <img src="../_static/img/qchoice-img.svg" class="petlja-problem-image-quiz  qchoice-image" /> 
             <ul data-component="multiplechoice" data-multipleanswers="false"  id="robotika_pitanje_izgled">
             <p>Q-24: Колико роботи личе на људска бића и животиње по свом изгледу и начину рада?</p>
 
-            <li data-component="answer" data-correct id="robotika_pitanje_izgled_opt_a">Не морају ни по чему да личе ни на људе ни на животиње, има робота који изгледају и функционишу сасвим другачије.</li><li data-component="feedback" id="robotika_pitanje_izgled_opt_a"></li>
+            <li data-component="answer" data-correct id="robotika_pitanje_izgled_opt_a">Не морају ни по чему да личе ни на људе ни на животиње, има робота који изгледају и функционишу сасвим другачије.</li><li data-component="feedback" id="robotika_pitanje_izgled_opt_a">Тачно</li>
             
-            <li data-component="answer"  id="robotika_pitanje_izgled_opt_b">Да би нешто било названо роботом, треба бар по нечему да личи на људско биће или животињу, иначе је обична машина.</li><li data-component="feedback" id="robotika_pitanje_izgled_opt_b"></li>
+            <li data-component="answer"  id="robotika_pitanje_izgled_opt_b">Да би нешто било названо роботом, треба бар по нечему да личи на људско биће или животињу, иначе је обична машина.</li><li data-component="feedback" id="robotika_pitanje_izgled_opt_b">Нетачно</li>
             
 
             </ul>
             </div>
             
-            <div class="course-box course-box-question course-content">
+            <div class="course-box course-box-question course-content petlja-problem-box choice-question">
+                <div class="image-background"></div>
+                <div class="petlja-problem-box-icon-holder"> </div>
+                <img src="../_static/img/qchoice-img.svg" class="petlja-problem-image  qchoice-image" />
+                <img src="../_static/img/qchoice-img.svg" class="petlja-problem-image-quiz  qchoice-image" /> 
             <ul data-component="multiplechoice" data-multipleanswers="false"  id="robotika_pitanje_pokretljivost">
             <p>Q-25: Колико су роботи покретљиви?</p>
 
-            <li data-component="answer"  id="robotika_pitanje_pokretljivost_opt_a">Роботи су углавном покретни, али могу да буду и потпуно непокретни.</li><li data-component="feedback" id="robotika_pitanje_pokretljivost_opt_a"></li>
+            <li data-component="answer"  id="robotika_pitanje_pokretljivost_opt_a">Роботи су углавном покретни, али могу да буду и потпуно непокретни.</li><li data-component="feedback" id="robotika_pitanje_pokretljivost_opt_a">Нетачно</li>
             
-            <li data-component="answer" data-correct id="robotika_pitanje_pokretljivost_opt_b">Да би нешто било названо роботом, мора (поред других осообина) да има бар делове који су покретни.</li><li data-component="feedback" id="robotika_pitanje_pokretljivost_opt_b"></li>
+            <li data-component="answer" data-correct id="robotika_pitanje_pokretljivost_opt_b">Да би нешто било названо роботом, мора (поред других осообина) да има бар делове који су покретни.</li><li data-component="feedback" id="robotika_pitanje_pokretljivost_opt_b">Тачно</li>
             
-            <li data-component="answer"  id="robotika_pitanje_pokretljivost_opt_c">Робот мора да буде у стању да се креће, тј. да мења свој положај као целина.</li><li data-component="feedback" id="robotika_pitanje_pokretljivost_opt_c"></li>
+            <li data-component="answer"  id="robotika_pitanje_pokretljivost_opt_c">Робот мора да буде у стању да се креће, тј. да мења свој положај као целина.</li><li data-component="feedback" id="robotika_pitanje_pokretljivost_opt_c">Нетачно</li>
             
 
             </ul>
@@ -421,19 +397,17 @@
 разликују од типичних. Имајући ово у виду, одговорите на следећа питања и размислите о могућим
 изузецима: да ли их има и какви би могли да буду. По могућности продискутујте своје одговоре у групи.</p>
 
-    <div class="course-box course-box-special">
+    <div class="note-wrapper questionnote-type">
+        <div class="note-icon-holder"> </div>
+        <img src="../_static/img/question-mark.png" class="note-image questionnote-image" /> 
         <div class="course-content">
-            <h4 class="carbox-title">
-                <img class="corner-image float-right" src="../_static/img/question-mark.png" />
-            </h4>
-            <p>
 <div class="line-block">
 <div class="line">Да ли роботи функционишу без помоћи човека?</div>
 <div class="line">Колико су роботи способни да опажају своје окружење?</div>
 <div class="line">Да ли се роботи понашају интелигентно (у смислу који смо описали у одељку о вештачкој интелигенцији)?</div>
 </div>
 
-    </p></div></div>
+    </div></div>
 </div>
 
 
