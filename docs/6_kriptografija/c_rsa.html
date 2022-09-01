@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Алгоритам RSA - За оне који желе да знају више</title>
+    <title>Алгоритам RSA - за оне који желе да знају више</title>
     <link rel="stylesheet" type="text/css" href="../_static/activecode.css" />
     <link rel="stylesheet" type="text/css" href="../_static/codemirror.css" />
     <link rel="stylesheet" type="text/css" href="../_static/qchoice.css" />
@@ -339,8 +339,8 @@
     <div id="main-content">
     
   <div class="section" id="rsa">
-<h1>Алгоритам RSA - За оне који желе да знају више<a class="headerlink" href="#rsa" title="Permalink to this headline">¶</a></h1>
-<p>Овде ће бити објашњен и изложен поступак прављења јавног и тајног кључа за алгоритам RSA, као и сам
+<h1>Алгоритам RSA - за оне који желе да знају више<a class="headerlink" href="#rsa" title="Permalink to this headline">¶</a></h1>
+<p>Овде ће бити објашњен и изложен поступак прављења јавног и тајног кључа за алгоритам RSA, као и сâм
 алгоритам којим се поруке криптују и декриптују помоћу тих кључева. Из тога ће се видети зашто (тј.
 под којим условима) је овај систем безбедан, односно зашто нападач не може да открије приватни кључ
 и тиме разбије шифру.</p>
@@ -349,7 +349,7 @@
 <div class="line-block">
 <div class="line"><br /></div>
 </div>
-<p>Алгоритам RSA се базира са једне стране на резултатима из теорије бројева, а са друге на рачунској
+<p>Алгоритам RSA се базира, са једне стране на резултатима из теорије бројева, а са друге на рачунској
 сложености одређених поступака, као што је растављање броја на просте чиниоце (факторизација броја).</p>
 <p>Прво ћемо описати како се поступак примењује.</p>
 <div class="section" id="id1">
@@ -479,7 +479,7 @@ print('Декриптована вредност M =', M1)
 разбије шифру. Пошто је број <span class="math notranslate nohighlight">\(n\)</span> део јавног кључа, он је нападачу познат. Растављањем
 броја <span class="math notranslate nohighlight">\(n\)</span> на просте чиниоце, нападач може да дође до простих бројева <span class="math notranslate nohighlight">\(p\)</span> и <span class="math notranslate nohighlight">\(q\)</span>,
 а затим да одреди кључ <span class="math notranslate nohighlight">\(d\)</span> на исти начин као што то ради и власник приватног кључа.</p>
-<p>Ево како би тај постуапк изгледао:</p>
+<p>Ево како би тај постуапак изгледао:</p>
 
 <div data-childcomponent="rsa_razbijanje" class="course-box course-box-problem course-content">
 
@@ -555,8 +555,7 @@ print('Декриптована вредност M =', M)
 небезбедним. Ми смо користили мале бројеве само ради лакшег праћења рада алгоритма и његовог разумевања.</p>
 <p>Функције <code class="docutils literal notranslate"><span class="pre">prosireni_euklidov_algoritam</span></code>, <code class="docutils literal notranslate"><span class="pre">inverz</span></code>, <code class="docutils literal notranslate"><span class="pre">kriptovano</span></code> и <code class="docutils literal notranslate"><span class="pre">dekriptovano</span></code> се извршавају
 прилично брзо чак и за огромне бројеве, у њима је број потребних операција сразмеран броју цифара броја
-на који се примењују. Једина спорија функција је <code class="docutils literal notranslate"><span class="pre">faktorizacija</span></code>, број операција које су њој потребне
-је сразмеран са вредношћу <span class="math notranslate nohighlight">\(\sqrt{n}\)</span>. Када би нападач користио поступак факторизације као у
+на који се примењују. Једина спорија функција је <code class="docutils literal notranslate"><span class="pre">faktorizacija</span></code>, јер је број операција које су њој потребне сразмеран са вредношћу <span class="math notranslate nohighlight">\(\sqrt{n}\)</span>. Када би нападач користио поступак факторизације као у
 претходном програму, за број <span class="math notranslate nohighlight">\(n\)</span> од 100 цифара би му на обичном рачунару требале милијарде година да
 нађе његове просте чиниоце.</p>
 
@@ -567,7 +566,7 @@ print('Декриптована вредност M =', M)
             
 <p>Безбедност алгоритма RSA се не заснива на пажљивом чувању неког тајног податка или поступка.
 Напротив, видели смо да је познато како може да се израчуна приватни кључ. Дакле, изазов који се
-поставља пред нападача је „само” проблем огромне количине рачунања.</p>
+поставља пред нападача је „само“ проблем огромне количине рачунања.</p>
 
     </div></div>
 <p>Током ових неколико деценија колико се алгоритам RSA користи, пронађени су разни начини да се алгоритам
@@ -591,7 +590,7 @@ print('Декриптована вредност M =', M)
 практичног значаја који овај алгоритам и даље има. Из свега што је познато о алгоритму RSA, може се
 закључити да је овај поступак криптовања у основи поуздан, али да је у многим случајевима имплементиран
 на несигуран начин, тј. са недовољно поузданим вредностима параметара.</p>
-<p>Мада је алгоритам RSA у међувремену инпсирисао откриће других, сличних али напреднијих алгоритама,
+<p>Мада је алгоритам RSA у међувремену инспирисао откриће других, сличних али напреднијих алгоритама,
 он је још увек најпопуларнији криптосистем са јавним кључем.</p>
 </div>
 </div>
