@@ -1,6 +1,6 @@
-# Primene savremenog računarstva za 4. razred gimnazije
+# Primene savremenog računarstva za 4. razred gimnazije - prirodni smer
 
-Ovaj repozitorijum posvećen je kursu za Primene savremenog računarstva za 4. razred gimnazije. 
+Ovaj repozitorijum posvećen je kursu za Primene savremenog računarstva za 4. razred gimnazije - prirodni smer. 
 
 Kurs je na Petljom portalu dotupan ovde: [https://petlja.org/kurs/7193/0](https://petlja.org/kurs/7193/)
 
