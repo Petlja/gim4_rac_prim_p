@@ -2,6 +2,7 @@
 ============================
 
 Квантни рачунар може да се направи на више начина. Међу технологијама које се истражују су и: 
+
 - заробљени јони `(trapped ions) <https://en.wikipedia.org/wiki/Trapped_ion_quantum_computer>`_, 
 - силицијумске квантне тачке `(silicon quantum dots) <https://en.wikipedia.org/wiki/Quantum_dot>`_, 
 - тополошки квантни рачунар `(topological quantum computer) <https://en.wikipedia.org/wiki/Topological_quantum_computer>`_,
